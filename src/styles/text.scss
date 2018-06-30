@@ -1,0 +1,59 @@
+
+.head-h1 {
+  font-size: 44px;
+  //font-family: $museosanscyrl-700;
+  margin-bottom: 20px;
+
+  @media(max-width: $screen-md){
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  @media(max-width: $screen-sm){
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+}
+
+.head-h2 {
+  font-size: 36px;
+  //font-family: $museosanscyrl-700;
+  margin-bottom: 20px;
+
+  @media(max-width: $screen-md){
+    font-size: 19px;
+  }
+}
+
+.head-h3 {
+  //font-family: $museosanscyrl-700;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+  @media(max-width: $screen-md){
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+.head-h4 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+  @media(max-width: $screen-md){
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+a {
+  @include transition(all .2s ease-in-out);
+
+  &:hover, &:focus {
+    opacity: $opacity-main;
+    text-decoration: none;
+  }
+}
+
+

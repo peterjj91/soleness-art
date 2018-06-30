@@ -1,0 +1,66 @@
+.footer {
+  background-color: #fafbf5;
+  padding-top: 54px;
+  padding-bottom: 46px;
+
+  @media (max-width: $screen-sm) {
+    padding-top: 40px;
+    padding-bottom: 26px;
+  }
+
+  &__container {
+    @include container-fixed;
+
+    @media (min-width: $screen-sm-min) {
+      width: $container-sm;
+    }
+    @media (min-width: $screen-md-min) {
+      width: $container-md;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: $container-large-desktop;
+    }
+    @media(max-width: $screen-lg){
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &__content {
+    
+  }
+
+  &__main {
+    @include make-row;
+    margin-bottom: 30px;
+
+    @media (max-width: $screen-sm) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 29px;
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 21px;
+    }
+
+    .logo {
+      @media (max-width: $screen-md) {
+        height: 19px;
+      }
+    }
+  }
+
+  &__nav {
+    @include make-xs-column(24);
+    @include make-sm-column(12.1);
+    float: right !important;
+    padding: 0 !important;
+
+    @media (max-width: $screen-sm) {
+      padding-top: 2px !important;
+    }
+  }
+}

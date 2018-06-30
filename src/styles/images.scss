@@ -1,0 +1,30 @@
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: left !important;
+  width: 438px;
+  height: 37px;
+  // background-image: url("../img/logo-h.png");
+
+  @media(max-width: $screen-md){
+    width: 220px;
+    height: 20px;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
+
+  }
+
+  &--mini {
+    width: 267px;
+    height: 22px;
+  }
+}
+
+.icon {
+  &--basket {
+  }
+}
