@@ -6,79 +6,115 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <!--<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">-->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <main id="panel-body">
-  <div class="header">
-      <div class="header__top">
-          <div class="header__container">
-              <!-- <div class="header__burger">
-                  <span class="mobile-menu" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
-                      <span></span>
-                  </span>
-              </div> -->
+    <div class="header">
+        <div class="header__top">
+            <div class="header__top__menu" type="button" data-toggle="collapse" data-target=".menu-top">
+                Меню
+            </div>
 
-              <ul class="header__breadcrumb">
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Оплата и доставка</a></li>
-                <li><a href="#">Реставрация</a></li>
-                <li><a href="#">Изготовление на заказ</a></li>
-                <li><a href="#">Гарантии</a></li>
-                <li><a href="#">События</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-          </div>
-      </div>
-
-      <div class="header__content">
-        <div class="header__container">
-          <div class="header__logo">
-            <div class="logo"></div>
-          </div>
-
-          <div class="header__main">
-            
-          </div>
-
-          <div class="header__side">
-            
-          </div>
+            <nav class="navbar navbar-default navbar-static navbar--breadcrumb" id="navbar-top">
+                <div class="collapse navbar-collapse menu-top">
+                    <div class="header__container">
+                        <ul class="header__breadcrumb">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Реставрация</a></li>
+                            <li><a href="#">Изготовление на заказ</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">События</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
 
-<!--         <nav class="navbar navbar-default navbar-static promo-mobile" id="navbar-example">
-            <div class="header__container">
-                <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
+        <div class="header__container">
+            <div class="header__content">
+                <a href="#" class="header__logo">
+                    <div class="logo"></div>
+                </a>
+
+                <div class="header__burger">
+                    <span class="header__burger__title">Каталог</span>
+
+                    <span class="mobile-menu" type="button" data-toggle="collapse" data-target=".menu-main">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+
+                <div class="header__search">
+                    <div id="sb-search" class="sb-search">
+                        <form>
+                            <div class="sb-search-input__wrapper">
+                                <input class="sb-search-input " onkeyup="buttonUp();" placeholder="Поиск" onblur="monkey();" type="search" name="search" id="search">
+
+                                <input class="sb-search-submit" type="submit"  value="">
+
+                                <div class="sb-icon-search">
+                                    <svg class="">
+                                        <use xlink:href="icons/icons.svg#search"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <button class="btn btn__promo sb-search__btn">Найти</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="header__side">
+                    <div class="header__tel">
+                        <a href="tel:88000000000">8 (800) XXX-XXX-XX</a>
+                    </div>
+
+                    <div class="header__basket">
+                        <a href="#" class="badge-basket">
+                            <svg class="badge-basket__icon">
+                                <use xlink:href="icons/icons.svg#basket"></use>
+                            </svg>
+
+                            <div class="badge-basket__num">2</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-default navbar-static promo-mobile" id="navbar-example">
+            <div class="collapse navbar-collapse menu-main">
+                <div class="header__container">
                     <div class="header__nav">
                         <ul class="nav nav--header">
-                            <li class="current"><a href="#"><span class="content-link">Главная</span></a></li>
-                            <li><a href="#"><span class="content-link">Видео</span></a></li>
-                            <li><a href="#"><span class="content-link">Статьи</span></a></li>
+                            <li><a href="#">Мебель</a></li>
+                            <li><a href="#">Картины</a></li>
                             <li class="active">
-                                <a href="#">
-                                    <span class="content-link">Регистрация</span>
-                                </a>
+                                <a href="#">Украшения</a>
                             </li>
-                            <li class="active nav__circle">
-                                <a href="#">
-                                    <span class="nav__circle__text">
-                                        <span class="content-link">Вход</span>
-                                        <span class="chart-gauge__wrapper chart-gauge__wrapper--header">
-                                            <svg viewBox="0 0 120 120" class="chart-gauge chart-gauge--light" fill="none" stroke-width="2">
-                                                <circle class="chart-gauge__base" r="57.32" cx="60" cy="60"></circle>
-                                                <circle class="chart-gauge__primary" transform="rotate(-90 60 60)" stroke-dasharray="180 360" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
-                                                <text x="60" y="20" dx="0" dy="1.3em" class="chart-gauge__label">60%</text>
-                                            </svg>
-                                        </span>
-                                    </span>
-                                </a>
+                            <li><a href="#">Вазы</a></li>
+                            <li><a href="#">Статуэтки</a></li>
+                        </ul>
+
+                        <ul class="nav nav--header">
+                            <li><a href="#">Мебель</a></li>
+                            <li><a href="#">Картины</a></li>
+                            <li class="active">
+                                <a href="#">Украшения</a>
                             </li>
+                            <li><a href="#">Вазы</a></li>
+                            <li><a href="#">Статуэтки</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </nav> -->
-      </div>
-  </div>
+        </nav>
+    </div>

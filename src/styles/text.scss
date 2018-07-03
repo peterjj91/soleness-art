@@ -1,22 +1,22 @@
 
 .head-h1 {
-  font-size: 44px;
-  //font-family: $museosanscyrl-700;
+  font-family: $lora;
+  font-size: 38px;
   margin-bottom: 20px;
 
   @media(max-width: $screen-md){
-    font-size: 34px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
   @media(max-width: $screen-sm){
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 6px;
   }
 }
 
 .head-h2 {
+  font-family: $lora;
   font-size: 36px;
-  //font-family: $museosanscyrl-700;
   margin-bottom: 20px;
 
   @media(max-width: $screen-md){
@@ -25,7 +25,7 @@
 }
 
 .head-h3 {
-  //font-family: $museosanscyrl-700;
+  font-family: $lora;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -37,6 +37,7 @@
 }
 
 .head-h4 {
+  font-family: $lora;
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 20px;

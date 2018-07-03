@@ -2,16 +2,16 @@
 .mobile-menu {
   display: inline-block;
   vertical-align: top;
-  width: 30px;
-  height: 20px;
+  width: 24px;
+  height: 18px;
   z-index: 2;
   cursor: pointer;
   font-size: 20px;
   position: relative;
-  @media(max-width: $screen-sm){
-    //display: inline-block;
-    //width: 26px;
-    //height: 22px;
+
+  @media(max-width: $screen-md){
+    width: 14px;
+    height: 10px;
   }
 
   &__wrapper {
@@ -22,54 +22,52 @@
     height: 78px;
     z-index: 4;
     cursor: pointer;
-    @media(max-width: $screen-sm){
-      //width: 68px;
-      //height: 68px;
-      //padding: 23px 20px;
+    @media(max-width: $screen-md){
+
     }
     @media(max-width: $screen-xs){
-      //width: 50px;
-      //height: 49px;
-      //padding: 14px 12px;
+
     }
   }
 
-  span {
-    background-color: $color-main;
-    height: 4px;
+  & > span {
+    position: absolute;
+    background-color: black;
+    height: 1px;
     display: block;
-    width: 30px;
-    margin: 8px auto 0;
-    border-right: 1px;
-    border-radius: 2px;
+    left: 0px;
+    width: 24px;
 
-    @media(max-width: $screen-sm){
-      //margin: 9px auto 0;
-      //width: 26px;
+    @media(max-width: $screen-md){
+      width: 14px;
     }
 
-    &:before, &:after {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 4px;
-      top: inherit;
-      left: 0;
-      margin: auto;
-      background-color: $color-main;
-      border-radius: 2px;
+    &:nth-child(1){
+      top: 0px;
+    }
+
+    &:nth-child(2){
+      top: 6px;
 
       @media(max-width: $screen-md){
-        //width: 30px;
+        top: 3px;
       }
     }
 
-    &:before {
-      top: 0;
+    &:nth-child(3){
+      top: 11px;
+
+      @media(max-width: $screen-md){
+        top: 6px;
+      }
     }
 
-    &:after {
-      bottom: 0;
+    &:nth-child(4){
+      bottom: 0px;
+
+      @media(max-width: $screen-md){
+
+      }
     }
   }
 
@@ -89,7 +87,6 @@
 
       &:before, &:after {
         margin-top: 0;
-        //box-shadow: 0 0 0 1px white;
       }
     }
   }

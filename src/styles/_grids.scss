@@ -69,16 +69,13 @@ $container-large-desktop:      1440px + $grid-gutter-width;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop;
 
-$museosanscyrl-100: MuseoSansCyrl-100;
-$museosanscyrl-300: MuseoSansCyrl-300;
-$museosanscyrl-500: MuseoSansCyrl-500;
-$museosanscyrl-700: MuseoSansCyrl-700;
-$museosanscyrl-900: MuseoSansCyrl-900;
 $lora: 'lora';
 $scada: 'scada';
 $scada-bold: 'scada-bold';
 
 $font-family-default: $scada;
+
+$transition-basic: all .2s cubic-bezier(.645,.045,.355,1);
 
 $color-main: #009b65;
 $color-promo: #256386;

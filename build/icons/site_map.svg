@@ -1,0 +1,20 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>site_map</title>
+  <g>
+    <path class="cls-1" d="M28.91.06H14.09V9.94H28.91ZM26.44,7.47H16.56V2.53h9.88V7.47Z"/>
+    <polygon class="cls-1" points="5.9 14.88 19.55 14.88 19.55 17.35 23.45 17.35 23.45 14.88 37.1 14.88 37.1 17.35 41 17.35 41 12.41 2 12.41 2 17.35 5.9 17.35 5.9 14.88"/>
+    <path class="cls-1" d="M35.59,18.59V26H43V18.59Zm4.94,4.94H38.06V21.06h2.47Z"/>
+    <path class="cls-1" d="M17.79,26h7.41V18.59H17.79V26Zm2.47-4.94h2.47v2.47H20.26Z"/>
+    <path class="cls-1" d="M0,26H7.41V18.59H0Zm2.47-4.94H4.94v2.47H2.46Z"/>
+    <rect class="cls-1" x="19.5" y="8" width="4" height="11"/>
+    <rect class="cls-1" x="37" y="14" width="4" height="6"/>
+    <rect class="cls-1" x="2" y="14" width="4" height="6"/>
+  </g>
+</svg>

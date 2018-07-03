@@ -6,82 +6,118 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <!--<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">-->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <main id="panel-body">
-  <div class="header">
-      <div class="header__top">
-          <div class="header__container">
-              <!-- <div class="header__burger">
-                  <span class="mobile-menu" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
-                      <span></span>
-                  </span>
-              </div> -->
+    <div class="header">
+        <div class="header__top">
+            <div class="header__top__menu" type="button" data-toggle="collapse" data-target=".menu-top">
+                Меню
+            </div>
 
-              <ul class="header__breadcrumb">
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Оплата и доставка</a></li>
-                <li><a href="#">Реставрация</a></li>
-                <li><a href="#">Изготовление на заказ</a></li>
-                <li><a href="#">Гарантии</a></li>
-                <li><a href="#">События</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-          </div>
-      </div>
-
-      <div class="header__content">
-        <div class="header__container">
-          <div class="header__logo">
-            <div class="logo"></div>
-          </div>
-
-          <div class="header__main">
-            
-          </div>
-
-          <div class="header__side">
-            
-          </div>
+            <nav class="navbar navbar-default navbar-static navbar--breadcrumb" id="navbar-top">
+                <div class="collapse navbar-collapse menu-top">
+                    <div class="header__container">
+                        <ul class="header__breadcrumb">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Реставрация</a></li>
+                            <li><a href="#">Изготовление на заказ</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">События</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
 
-<!--         <nav class="navbar navbar-default navbar-static promo-mobile" id="navbar-example">
-            <div class="header__container">
-                <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
+        <div class="header__container">
+            <div class="header__content">
+                <a href="#" class="header__logo">
+                    <div class="logo"></div>
+                </a>
+
+                <div class="header__burger">
+                    <span class="header__burger__title">Каталог</span>
+
+                    <span class="mobile-menu" type="button" data-toggle="collapse" data-target=".menu-main">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+
+                <div class="header__search">
+                    <div id="sb-search" class="sb-search">
+                        <form>
+                            <div class="sb-search-input__wrapper">
+                                <input class="sb-search-input " onkeyup="buttonUp();" placeholder="Поиск" onblur="monkey();" type="search" name="search" id="search">
+
+                                <input class="sb-search-submit" type="submit"  value="">
+
+                                <div class="sb-icon-search">
+                                    <svg class="">
+                                        <use xlink:href="icons/icons.svg#search"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <button class="btn btn__promo sb-search__btn">Найти</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="header__side">
+                    <div class="header__tel">
+                        <a href="tel:88000000000">8 (800) XXX-XXX-XX</a>
+                    </div>
+
+                    <div class="header__basket">
+                        <a href="#" class="badge-basket">
+                            <svg class="badge-basket__icon">
+                                <use xlink:href="icons/icons.svg#basket"></use>
+                            </svg>
+
+                            <div class="badge-basket__num">2</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-default navbar-static promo-mobile" id="navbar-example">
+            <div class="collapse navbar-collapse menu-main">
+                <div class="header__container">
                     <div class="header__nav">
                         <ul class="nav nav--header">
-                            <li class="current"><a href="#"><span class="content-link">Главная</span></a></li>
-                            <li><a href="#"><span class="content-link">Видео</span></a></li>
-                            <li><a href="#"><span class="content-link">Статьи</span></a></li>
+                            <li><a href="#">Мебель</a></li>
+                            <li><a href="#">Картины</a></li>
                             <li class="active">
-                                <a href="#">
-                                    <span class="content-link">Регистрация</span>
-                                </a>
+                                <a href="#">Украшения</a>
                             </li>
-                            <li class="active nav__circle">
-                                <a href="#">
-                                    <span class="nav__circle__text">
-                                        <span class="content-link">Вход</span>
-                                        <span class="chart-gauge__wrapper chart-gauge__wrapper--header">
-                                            <svg viewBox="0 0 120 120" class="chart-gauge chart-gauge--light" fill="none" stroke-width="2">
-                                                <circle class="chart-gauge__base" r="57.32" cx="60" cy="60"></circle>
-                                                <circle class="chart-gauge__primary" transform="rotate(-90 60 60)" stroke-dasharray="180 360" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
-                                                <text x="60" y="20" dx="0" dy="1.3em" class="chart-gauge__label">60%</text>
-                                            </svg>
-                                        </span>
-                                    </span>
-                                </a>
+                            <li><a href="#">Вазы</a></li>
+                            <li><a href="#">Статуэтки</a></li>
+                        </ul>
+
+                        <ul class="nav nav--header">
+                            <li><a href="#">Мебель</a></li>
+                            <li><a href="#">Картины</a></li>
+                            <li class="active">
+                                <a href="#">Украшения</a>
                             </li>
+                            <li><a href="#">Вазы</a></li>
+                            <li><a href="#">Статуэтки</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </nav> -->
-      </div>
-  </div>
+        </nav>
+    </div>
 
 <div class="content">
     <div class="content__container">
@@ -136,109 +172,127 @@
 
         <div class="footer">
             <div class="footer__container">
-                <div class="footer__logo">
-                    <a href="#" class="logo logo--mini"></a>
-                </div>
-
-                <div class="footer__main">
-                    <div class="footer__description">
-                        <p>© ООО «Джонсон &amp; Джонсон», Россия, 2018 г.<br>Этот сайт принадлежит ООО «Джонсон &amp; Джонсон», которая полностью отвечает за его содержимое.<br>Сайт предназначен для посетителей из Российской Федерации</p>
-                        <p>Информация, размещенная на сайте, носит характер<br> рекомендаций  и не может считаться консультацией медицинского работника  или заменить ее. Всегда консультируйтесь со своим лечащим врачом перед тем как следовать той или иной рекомендации. </p>
+                <div class="footer__row">
+                    <div class="footer__side footer__side--left">
+                        <div class="footer__logo">
+                            <a href="#" class="logo logo--white logo--footer"></a>
+                        </div>
                     </div>
 
-                    <div class="footer__nav">
-                        <ul class="footer__list footer__list--mini">
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">Видео</a></li>
-                            <li><a href="#">Статьи</a></li>
-                            <li><a href="#">О проекте</a></li>
+                    <div class="footer__side footer__side--center">
+                        <ul class="footer__list">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Реставрация</a></li>
                         </ul>
 
-                        <ul class="footer__list footer__list--big">
-                            <li><a href="#">Правила и условия</a></li>
-                            <li><a href="#">Политика конфиденциальности</a></li>
-                            <li><a href="#">Условия обработки персональных данных</a></li>
-                            <li><a href="#">Правовые положения</a></li>
+                        <ul class="footer__list">
+                            <li><a href="#">Изготовление на заказ</a></li>
+                            <li><a href="#">События</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__side footer__side--right">
+                        <div class="footer__tel">
+                            <a href="tel:88000000000">8 (800) XXX - XX - XX</a>
+                        </div>
+
+                        <div class="footer__email">
+                            <a href="mailto:zakaz@solenesart.ru">zakaz@solenesart.ru</a>
+                        </div>
+
+                        <ul class="footer__contact">
+                            <li>
+                                <a href="#">
+                                    <svg class="footer__skype">
+                                        <use xlink:href="icons/icons.svg#skype"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="footer__web">
+                                        <use xlink:href="icons/icons.svg#credit-card"></use>
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="footer__slogan">
-                    <div class="footer__slogan__text footer__slogan__text--big">Имеются   противопоказания</div>
+                <div class="footer__bottom">
+                    <div class="footer__map">
+                        <a href="#">
+                            <svg class="footer__sitemap" width="43px" height="26px">
+                                <use xlink:href="icons/icons.svg#site_map"></use>
+                            </svg>
+                        </a>
+                    </div>
 
-                    <div class="footer__slogan__text">проконсультируйтесь  со  специалистом</div>
+                    <div class="footer__row">
+                        <div class="footer__side footer__side--left">
+                            <p>© ИП Абрамов С. Д.</p>
+                        </div>
 
-                    <!--<table class="footer__slogan__table">-->
-                        <!--<tr>-->
-                            <!--<td>И</td>-->
-                            <!--<td>м</td>-->
-                            <!--<td>е</td>-->
-                            <!--<td>ю</td>-->
-                            <!--<td>т</td>-->
-                            <!--<td>с</td>-->
-                            <!--<td>я</td>-->
-                            <!--<td></td>-->
-                            <!--<td>п</td>-->
-                            <!--<td>р</td>-->
-                            <!--<td>о</td>-->
-                            <!--<td>т</td>-->
-                            <!--<td>и</td>-->
-                            <!--<td>в</td>-->
-                            <!--<td>о</td>-->
-                            <!--<td>к</td>-->
-                            <!--<td>а</td>-->
-                            <!--<td>з</td>-->
-                            <!--<td>а</td>-->
-                            <!--<td>н</td>-->
-                            <!--<td>и</td>-->
-                            <!--<td>я</td>-->
-                        <!--</tr>-->
-                    <!--</table>-->
+                        <div class="footer__side footer__side--center">
+                            <ul class="promo-social promo-social--footer">
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#youtube"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#googleplus"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <!--<table class="footer__slogan__table footer__slogan__table&#45;&#45;small">-->
-                        <!--<tr>-->
-                            <!--<td>П</td>-->
-                            <!--<td>р</td>-->
-                            <!--<td>о</td>-->
-                            <!--<td>к</td>-->
-                            <!--<td>о</td>-->
-                            <!--<td>н</td>-->
-                            <!--<td>с</td>-->
-                            <!--<td>у</td>-->
-                            <!--<td>л</td>-->
-                            <!--<td>ь</td>-->
-                            <!--<td>т</td>-->
-                            <!--<td>и</td>-->
-                            <!--<td>р</td>-->
-                            <!--<td>у</td>-->
-                            <!--<td>й</td>-->
-                            <!--<td>т</td>-->
-                            <!--<td>е</td>-->
-                            <!--<td>с</td>-->
-                            <!--<td>ь</td>-->
-                            <!--<td></td>-->
-                            <!--<td>с</td>-->
-                            <!--<td>о</td>-->
-                            <!--<td></td>-->
-                            <!--<td>с</td>-->
-                            <!--<td>п</td>-->
-                            <!--<td>е</td>-->
-                            <!--<td>ц</td>-->
-                            <!--<td>и</td>-->
-                            <!--<td>а</td>-->
-                            <!--<td>л</td>-->
-                            <!--<td>и</td>-->
-                            <!--<td>с</td>-->
-                            <!--<td>т</td>-->
-                            <!--<td>о</td>-->
-                            <!--<td>м</td>-->
-                        <!--</tr>-->
-                    <!--</table>-->
+                        <div class="footer__side footer__side--right">
+                            <p>Разработка сайта - <a href="#">Акцент-Дон</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    
+
     <div class="modal right fade" id="favourite-side1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal__close modal__close--main">
             <button type="button" class="btn " data-dismiss="modal">

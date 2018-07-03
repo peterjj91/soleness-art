@@ -2,29 +2,55 @@
 .logo {
   display: inline-block;
   vertical-align: top;
-  background-size: contain !important;
+  background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: left !important;
-  width: 438px;
-  height: 37px;
-  // background-image: url("../img/logo-h.png");
+  width: 180px;
+  height: 56px;
+  background-image: url("../img/logo_white.svg");
 
   @media(max-width: $screen-md){
-    width: 220px;
-    height: 20px;
+    width: 80px;
+    height: 25px;
+  }
+
+  &:hover, &:focus {
+    opacity: 1;
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
 
   }
 
-  &--mini {
-    width: 267px;
-    height: 22px;
+  &--white {
+    background-image: url("../img/logo_dark.svg");
+  }
+
+  &--footer {
+    @media(max-width: $screen-sm){
+      width: 103px;
+      height: 30px;
+    }
   }
 }
 
 .icon {
-  &--basket {
+  display: inline-block;
+  vertical-align: top;
+
+  &__basket {
+    @include sprite($icon-basket);
+  }
+
+  &__search {
+    @include sprite($icon-search);
+  }
+
+  &__pointer {
+    @include sprite($icon-pointer);
+  }
+
+  &__map {
+    @include sprite($icon-map);
   }
 }

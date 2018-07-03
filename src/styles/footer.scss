@@ -1,11 +1,32 @@
 .footer {
-  background-color: #fafbf5;
-  padding-top: 54px;
+  background-color: black;
+  padding-top: 73px;
   padding-bottom: 46px;
 
-  @media (max-width: $screen-sm) {
-    padding-top: 40px;
-    padding-bottom: 26px;
+  @media (max-width: $screen-md) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  a {
+    color: white;
+    text-decoration: underline;
+
+    @media (max-width: $screen-md) {
+
+    }
+
+    &:hover, &:focus {
+      color: white;
+    }
+  }
+
+  p {
+    color: white;
+
+    @media (max-width: $screen-md) {
+
+    }
   }
 
   &__container {
@@ -20,22 +41,61 @@
     @media (min-width: $screen-lg-min) {
       width: $container-large-desktop;
     }
-    @media(max-width: $screen-lg){
-      padding-left: 20px;
-      padding-right: 20px;
+    @media(max-width: $screen-md){
+      padding-left: 12px;
+      padding-right: 12px;
     }
   }
 
-  &__content {
-    
+  &__row {
+    text-align: center;
   }
 
   &__main {
-    @include make-row;
+    @extend %row;
     margin-bottom: 30px;
 
-    @media (max-width: $screen-sm) {
-      margin-bottom: 0;
+    @media (max-width: $screen-md) {
+
+    }
+  }
+
+  &__side {
+    margin: 0;
+    padding-top: 13px;
+
+    @media (max-width: $screen-md) {
+      width: 100%;
+      padding-top: 0;
+    }
+
+    &--left {
+      float: left;
+      text-align: left;
+
+      @media (max-width: $screen-md) {
+
+      }
+    }
+
+    &--center {
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+
+      @media (max-width: $screen-md) {
+        text-align: left;
+        margin-bottom: 19px;
+      }
+    }
+
+    &--right {
+      float: right;
+      text-align: right;
+
+      @media (max-width: $screen-md) {
+        text-align: left;
+      }
     }
   }
 
@@ -43,24 +103,147 @@
     margin-bottom: 29px;
 
     @media (max-width: $screen-md) {
-      margin-bottom: 21px;
+      margin-bottom: 24px;
     }
 
     .logo {
       @media (max-width: $screen-md) {
-        height: 19px;
+
       }
     }
   }
 
-  &__nav {
-    @include make-xs-column(24);
-    @include make-sm-column(12.1);
-    float: right !important;
-    padding: 0 !important;
+  &__list {
+    font-family: $lora;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    width: 206px;
 
-    @media (max-width: $screen-sm) {
-      padding-top: 2px !important;
+    @media (max-width: $screen-md) {
+      width: 100%;
+      font-size: 10px;
+      margin-bottom: 13px;
+    }
+
+    &:last-child {
+      @media (max-width: $screen-md) {
+        margin-bottom: 0;
+      }
+    }
+
+    li {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 30px;
+
+      @media (max-width: $screen-md) {
+        margin-bottom: 10px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__tel {
+    margin-bottom: 21px;
+
+    @media (max-width: $screen-md) {
+      font-size: 11px;
+      margin-bottom: 9px;
+    }
+  }
+
+  &__email {
+    margin-bottom: 20px;
+
+    @media (max-width: $screen-md) {
+      font-size: 11px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__contact {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+
+    li {
+      margin-bottom: 10px;
+
+      @media (max-width: $screen-md) {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &__sitemap {
+    width: 43px;
+    height: 26px;
+    fill: white
+  }
+
+  &__skype {
+    width: 36px;
+    height: 36px;
+    fill: white;
+
+    @media (max-width: $screen-md) {
+      width: 21px;
+      height: 19px;
+    }
+  }
+
+  &__web {
+    width: 42px;
+    height: 34px;
+    fill: white;
+
+    @media (max-width: $screen-md) {
+      width: 22px;
+      height: 17px;
+    }
+  }
+
+  &__nav {
+
+    @media (max-width: $screen-md) {
+
+    }
+  }
+
+  &__bottom {
+    clear: both;
+    padding: 16px 0px 0px 0px;
+
+    @media (max-width: $screen-md) {
+      padding-top: 0;
+    }
+
+    .footer__side {
+      @media (max-width: $screen-md) {
+        margin-bottom: 10px;
+      }
+
+      &:last-child {
+        @media (max-width: $screen-md) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__map {
+    margin-bottom: 30px;
+
+    @media (max-width: $screen-md) {
+      display: none;
     }
   }
 }

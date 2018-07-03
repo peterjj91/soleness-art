@@ -1,19 +1,20 @@
 .header {
-  margin-bottom: 25px;
   width: 100%;
+  position: relative;
 
   @media(max-width: $screen-md){
     position: fixed;
+    background-color: #fff;
+    height: 83px;
+    padding-top: 22px;
     z-index: 2;
     top: 0;
-    height: 60px;
-    margin-bottom: 0px;
   }
 
   &__container {
     @include container-fixed;
 
-    @media (min-width: $screen-sm) {
+    @media (min-width: $screen-md) {
       width: $container-sm;
     }
     @media (min-width: $screen-md) {
@@ -23,16 +24,41 @@
       width: $container-lg;
     }
     @media(max-width: $screen-md) {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 12px;
+      padding-right: 12px;
     }
   }
 
   &__top {
-    background-color: #000000;
-    // padding-top: 42px;
-    // padding-bottom: 30px;
     height: 67px;
+    border: none;
+    border-radius: 0px;
+
+    @media(max-width: $screen-md){
+      height: auto;
+    }
+
+    &__menu {
+      display: none;
+      background-color: black;
+      color: white;
+      position: absolute;
+      transform: translate(-50%, 0);
+      top: 0;
+      left: 50%;
+      z-index: 1;
+      font-size: 10px;
+      line-height: 21px;
+      height: 21px;
+      padding: 0px 10px;
+      text-transform: uppercase;
+      letter-spacing: 0px;
+      cursor: pointer;
+
+      @media(max-width: $screen-md){
+        display: block;
+      }
+    }
 
     & > .header__container, & > .container {
       height: 100%;
@@ -58,23 +84,34 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    // margin: 0px -45px;
-    // display: table;
-    // width: 100%;
     height: 67px;
     letter-spacing: 0.3px;
     font-size: 17px;
 
+    @media(max-width: $screen-md){
+      height: auto;
+      display: block;
+      font-size: 10px;
+      margin: 0px -10px;
+      padding-top: 15px;
+      padding-bottom: 5px;
+    }
+
     li {
       display: inline-block;
-      // display: table-cell;
-      // vertical-align: middle;
-      // flex: auto;
-      // padding: 0px 45px;
 
+      @media(max-width: $screen-md){
+        padding: 0px 10px;
+        margin-bottom: 10px;
+      }
 
       &:last-child {
         text-align: right;
+
+        @media(max-width: $screen-md){
+          //margin-left: -10px;
+          //margin-right: -10px;
+        }
       }
     }
 
@@ -89,18 +126,49 @@
   }
 
   &__burger {
-    display: none;
+    position: absolute;
+    left: 361px;
+    margin-top: 4px;
+    margin-left: 15px;
+    z-index: 1;
 
     @media(max-width: $screen-md){
+      transform: translate(-50%, 0%);
+      top: 42px;
+      left: 50%;
+      margin-top: 0px;
+    }
+
+    &__title {
+      font-family: $lora;
+      font-size: 18px;
       display: inline-block;
-      float: left;
+      vertical-align: middle;
+      margin-right: 21px;
+
+      @media(max-width: $screen-md){
+        font-size: 14px;
+        margin-right: 13px;
+      }
+    }
+
+    .mobile-menu {
+      vertical-align: middle;
     }
   }
 
   &__content {
+    height: 147px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 
     @media (max-width: $screen-md) {
-
+      height: auto;
+      position: initial;
+      padding-top: 18px;
     }
   }
 
@@ -109,6 +177,64 @@
     @media (max-width: $screen-md){
       float: right;
     }
+    @media(max-width: $screen-md){
+
+    }
+  }
+
+  &__search {
+    position: absolute;
+    left: 654px;
+    top: 59px;
+
+    @media(max-width: $screen-md){
+      position: initial;
+      left: auto;
+      right: auto;
+      top: auto;
+      min-width: 25px;
+      //left: auto;
+      //right: 53px;
+      //top: 37px;
+    }
+  }
+
+  &__tel {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: $lora;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    margin-top: 9px;
+    color: black;
+
+    @media(max-width: $screen-md){
+      position: absolute;
+      margin-top: 0px;
+      top: 5px;
+      right: 9px;
+      font-size: 11px;
+      letter-spacing: normal;
+    }
+
+    a {
+      color: black;
+
+      &:hover, &:focus {
+        color: black;
+
+      }
+    }
+  }
+
+  &__basket {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 52px;
+
+    @media(max-width: $screen-md){
+      margin-left: 0;
+    }
   }
 
   .navbar-collapse {
@@ -116,16 +242,12 @@
   }
 
   &__nav {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    float: left;
-    margin-left: -25px;
+    text-align: center;
+    height: 500px;
 
     @media (max-width: $screen-md){
-      width: 100%;
-      position: relative;
-      margin-left: 0;
+      height: auto;
+      min-height: 250px;
     }
   }
 
