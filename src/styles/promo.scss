@@ -124,6 +124,16 @@
         padding-right: 6px;
       }
 
+      &:hover, &:focus {
+        .promo-side__border {
+          opacity: 1;
+        }
+
+        .promo-side__text {
+          opacity: 1;
+        }
+      }
+
       &--big {
         height: 500px;
 
@@ -147,12 +157,14 @@
   }
 
   &__border {
+    opacity: -1;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     padding: 9px 9px;
+    transition: $transition-basic;
 
     @media(max-width: $screen-md){
       padding-left: 15px;
@@ -175,9 +187,11 @@
   }
 
   &__text {
+    opacity: -1;
     position: absolute;
     bottom: 33px;
     right: 46px;
+    transition: $transition-basic;
 
     @media(max-width: $screen-md){
       transform: translate(0%, -50%);
@@ -313,15 +327,23 @@
       background-color: rgba(0, 0, 0, .3);
       z-index: 0;
     }
+
+    &:hover {
+      .promo-item__description {
+        opacity: 1;
+      }
+    }
   }
 
   &__description {
+    opacity: -1;
     position: absolute;
     left: 0px;
     bottom: 0px;
     width: 100%;
     padding: 20px 20px;
     color: white;
+    transition: $transition-basic;
 
     @media(max-width: $screen-md){
       padding: 10px 9px;
@@ -336,12 +358,18 @@
     position: relative;
     padding-bottom: 13px;
     margin-bottom: 10px;
+    color: white;
 
     @media(max-width: $screen-md){
       line-height: 13px;
       font-size: 13px;
       padding-bottom: 11px;
       margin-bottom: 8px;
+    }
+
+    &:hover, &:focus {
+      color: white;
+      text-decoration: none;
     }
 
     &:before {
@@ -377,6 +405,15 @@
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+
+    a {
+      color: white;
+
+      &:hover, &:focus {
+        color: white;
+        text-decoration: none;
       }
     }
   }
@@ -614,7 +651,7 @@
     margin: 0px 6px;
 
     @media(max-width: $screen-md){
-      margin: 0px 1px;
+      margin: 0px 2px;
     }
 
     &:first-child {

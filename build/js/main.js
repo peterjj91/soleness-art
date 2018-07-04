@@ -31818,6 +31818,7 @@ $(document).ready(function() {
             {
                 breakpoint: 500,
                 settings: {
+                    arrows: false,
                     centerMode: true,
                     // centerPadding: '40px',
                     slidesToShow: 1

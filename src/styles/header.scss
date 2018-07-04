@@ -95,6 +95,7 @@
       margin: 0px -10px;
       padding-top: 15px;
       padding-bottom: 5px;
+      text-align: center;
     }
 
     li {
@@ -242,12 +243,30 @@
   }
 
   &__nav {
+    position: absolute;
+    top: 20px;
+    margin-left: 20px;
+    left: 361px;
     text-align: center;
-    height: 500px;
 
     @media (max-width: $screen-md){
-      height: auto;
-      min-height: 250px;
+      transform: translate(-50%, 0%);
+      left: 50%;
+      margin-left: 45px;
+    }
+
+    @media(max-width: $screen-xs){
+      width: 100%;
+      margin: 0;
+    }
+
+    &__wrapper {
+      height: 500px;
+
+      @media (max-width: $screen-md){
+        height: auto;
+        min-height: 250px;
+      }
     }
   }
 

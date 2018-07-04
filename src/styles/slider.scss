@@ -103,6 +103,15 @@
     vertical-align: top;
     position: relative;
     height: 100%;
+    overflow: hidden;
+
+    @media(max-width: $screen-md){
+      height: 220px;
+      position: relative;
+    }
+    @media(max-width: $screen-xs){
+      width: 100%;
+    }
 
     &:before {
       @media(max-width: $screen-md){
@@ -113,6 +122,10 @@
 
   &__img {
     @media(max-width: $screen-md){
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
       width: 100%;
     }
   }
@@ -157,5 +170,9 @@
 
   .slick-list {
     margin: 0px 37px;
+
+    @media(max-width: $screen-xs){
+      margin: 0;
+    }
   }
 }
