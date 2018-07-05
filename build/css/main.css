@@ -6264,9 +6264,6 @@ html, body {
   @media (max-width: 1040px) {
     .head-h4 {
       margin-bottom: 10px; } }
-  @media (max-width: 700px) {
-    .head-h4 {
-      font-size: 16px; } }
 
 .head-h5 {
   font-family: "lora";
@@ -6313,6 +6310,10 @@ button {
     border-radius: 0px;
     border: 1px solid rgba(88, 88, 88, 0.5);
     transition: all 0.2s ease-in-out; }
+    @media (max-width: 700px) {
+      .btn__promo {
+        padding: 3px 8px 2px 10px;
+        font-size: 14px; } }
     .btn__promo:hover, .btn__promo:focus {
       opacity: 0.7;
       color: #585858;
@@ -6323,6 +6324,9 @@ button {
       fill: rgba(88, 88, 88, 0.5);
       vertical-align: top;
       margin-left: 13px; }
+      @media (max-width: 700px) {
+        .btn__promo__icon {
+          display: none; } }
 
 .bootstrap-select {
   border-radius: 100px;
@@ -8149,7 +8153,8 @@ input {
   margin-bottom: 82px; }
   @media (max-width: 700px) {
     .product {
-      padding-top: 18px; } }
+      padding-top: 18px;
+      margin-bottom: 40px; } }
   .product__main {
     position: relative;
     float: left;
@@ -8213,9 +8218,12 @@ input {
           margin-left: 0.41667%; } }
       @media (max-width: 700px) {
         .product__main__info {
+          border-bottom: 1px solid rgba(88, 88, 88, 0.5);
           min-height: auto;
           padding-left: 12px;
-          padding-right: 12px; } }
+          padding-right: 12px;
+          padding-bottom: 35px;
+          margin-bottom: 35px; } }
     .product__main__description {
       position: absolute;
       bottom: -1px;
@@ -8243,11 +8251,22 @@ input {
       padding-left: 20px;
       padding-right: 20px;
       padding-top: 52px; }
+      @media (max-width: 700px) {
+        .product__main__text {
+          padding-top: 0;
+          padding-left: 12px;
+          padding-right: 12px; } }
       .product__main__text__title {
         margin-bottom: 27px;
         color: #8c0303; }
+        @media (max-width: 700px) {
+          .product__main__text__title {
+            margin-bottom: 15px; } }
       .product__main__text p {
         font-size: 16px; }
+        @media (max-width: 700px) {
+          .product__main__text p {
+            font-size: 18px; } }
   .product__title {
     margin-top: -12px;
     color: #8c0303; }
@@ -8298,11 +8317,18 @@ input {
         border-left: none;
         text-align: left;
         min-height: auto; } }
+    @media (max-width: 700px) {
+      .product__side {
+        padding-left: 12px;
+        padding-right: 12px; } }
     .product__side__block {
       margin-bottom: 48px; }
       @media (max-width: 1200px) {
         .product__side__block {
           margin-bottom: 20px; } }
+      @media (max-width: 700px) {
+        .product__side__block {
+          margin-bottom: 15px; } }
       .product__side__block:last-child {
         margin-bottom: 0; }
     .product__side__title {
@@ -8310,9 +8336,20 @@ input {
       @media (max-width: 1200px) {
         .product__side__title {
           margin-top: 0; } }
+      @media (max-width: 700px) {
+        .product__side__title {
+          font-size: 26px;
+          margin-bottom: 15px; } }
     .product__side p {
       color: #585858;
       font-size: 18px; }
+      @media (max-width: 700px) {
+        .product__side p {
+          font-size: 11px; } }
+  @media (max-width: 700px) {
+    .product__slider {
+      margin-left: 0;
+      margin-right: 0; } }
   .product__slider__main {
     position: relative;
     float: left;
@@ -8367,8 +8404,15 @@ input {
   @media (max-width: 700px) {
     .promo-product {
       margin: 0px -20px; } }
+  @media (max-width: 700px) {
+    .promo-product .slick-list {
+      padding: 0 !important; } }
   .promo-product__wrapper {
     overflow: hidden; }
+  @media (max-width: 700px) {
+    .promo-product__slider {
+      margin-left: -12px;
+      margin-right: -12px; } }
   .promo-product__title {
     margin-bottom: 30px; }
   .promo-product__block {
@@ -8395,6 +8439,11 @@ input {
     bottom: 19px;
     left: 0;
     width: 100%; }
+    @media (max-width: 700px) {
+      .promo-product__buy {
+        padding-left: 12px;
+        padding-right: 12px;
+        display: block; } }
     .promo-product__buy .btn {
       padding: 5px 15px 6px 15px;
       font-size: 13px; }
@@ -8409,6 +8458,10 @@ input {
     padding-top: 26px;
     font-size: 16px;
     padding-bottom: 75px; }
+    @media (max-width: 700px) {
+      .promo-product__description {
+        padding-right: 12px;
+        padding-left: 12px; } }
     .promo-product__description__title {
       margin-bottom: 17px; }
 

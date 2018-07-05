@@ -3,6 +3,7 @@
 
   @media(max-width: $screen-sm) {
     padding-top: 18px;
+    margin-bottom: 40px;
   }
 
   &__content {
@@ -44,9 +45,12 @@
       min-height: 485px;
 
       @media(max-width: $screen-sm){
+        border-bottom: 1px solid rgba(88, 88, 88, 0.5);
         min-height: auto;
         padding-left: 12px;
         padding-right: 12px;
+        padding-bottom: 35px;
+        margin-bottom: 35px;
       }
     }
 
@@ -80,13 +84,27 @@
       @include make-xs-column(24);
       padding-top: 52px;
 
+      @media(max-width: $screen-sm){
+        padding-top: 0;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
       &__title {
         margin-bottom: 27px;
         color: $color-promo;
+
+        @media(max-width: $screen-sm){
+          margin-bottom: 15px;
+        }
       }
 
       p {
         font-size: 16px;
+
+        @media(max-width: $screen-sm){
+          font-size: 18px;
+        }
       }
     }
   }
@@ -130,12 +148,19 @@
       text-align: left;
       min-height: auto;
     }
+    @media(max-width: $screen-sm){
+      padding-left: 12px;
+      padding-right: 12px;
+    }
 
     &__block {
       margin-bottom: 48px;
 
       @media(max-width: 1200px){
         margin-bottom: 20px;
+      }
+      @media(max-width: $screen-sm){
+        margin-bottom: 15px;
       }
 
       &:last-child {
@@ -149,16 +174,28 @@
       @media(max-width: 1200px){
         margin-top: 0;
       }
+      @media(max-width: $screen-sm){
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
     }
 
     p {
       color: #585858;
       font-size: 18px;
+
+      @media(max-width: $screen-sm){
+        font-size: 11px;
+      }
     }
   }
 
   &__slider {
     @extend %row;
+    @media(max-width: $screen-sm){
+      margin-left: 0;
+      margin-right: 0;
+    }
 
     &__main {
       @include make-xs-column(24);
@@ -199,12 +236,21 @@
     //margin: 0px -20px;
   }
 
+  .slick-list {
+    @media(max-width: $screen-sm){
+      padding: 0 !important;
+    }
+  }
+
   &__wrapper {
     overflow: hidden;
   }
 
   &__slider {
-
+    @media(max-width: $screen-sm){
+      margin-left: -12px;
+      margin-right: -12px;
+    }
   }
 
   &__title {
@@ -258,6 +304,12 @@
     left: 0;
     width: 100%;
 
+    @media(max-width: $screen-sm){
+      padding-left: 12px;
+      padding-right: 12px;
+      display: block;
+    }
+
     .btn {
       padding: 5px 15px 6px 15px;
       font-size: 13px;
@@ -278,6 +330,11 @@
     padding-top: 26px;
     font-size: 16px;
     padding-bottom: 75px;
+
+    @media(max-width: $screen-sm){
+      padding-right: 12px;
+      padding-left: 12px;
+    }
 
     &__title {
       margin-bottom: 17px;
