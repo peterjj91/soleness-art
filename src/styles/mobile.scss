@@ -23,7 +23,9 @@
     z-index: 1;
   }
 
-  .header__container {
+  .header__container, .container {
+    position: relative;
+
     @media(max-width: $screen-md){
       padding: 0;
     }

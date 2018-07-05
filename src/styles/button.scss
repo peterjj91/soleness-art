@@ -18,36 +18,33 @@ button {
   }
 
   &__promo {
-    background-color: $color-promo;
-    color: white;
-    padding: 15px 50px 15px 50px;
-    font-size: 13px;
-    border-radius: 100px;
-    font-weight: bold;
+    background-color: transparent;
+    color: #585858;
+    padding: 8px 14px 8px 17px;
+    font-size: 17px;
+    border-radius: 0px;
+    border: 1px solid rgba(88, 88, 88, 0.5);
     @include transition(all .2s ease-in-out);
 
     @media (max-width: $screen-md){
-      font-size: 11px;
-      padding-left: 30px;
-      padding-right: 30px;
+
     }
     @media (max-width: $screen-md){
-      padding: 14px 15px 11px 15px;
+
     }
 
     &:hover, &:focus {
       opacity: $opacity-main;
-      color: white;
+      color: #585858;
       text-decoration: none;
     }
 
-    &--clear {
-      background-color: #ffffff;
-      color: $color-promo;
-
-      &:hover, &:focus {
-        color: $color-promo;
-      }
+    &__icon {
+      width: 24px;
+      height: 21px;
+      fill: rgba(88, 88, 88, 0.5);
+      vertical-align: top;
+      margin-left: 13px;
     }
   }
 }

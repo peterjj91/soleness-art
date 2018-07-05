@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main id="panel-body">
+    <div class="header">
+        <div class="header__top">
+            <div class="header__top__menu" type="button" data-toggle="collapse" data-target=".menu-top">
+                Меню
+            </div>
+
+            <nav class="navbar navbar-default navbar-static navbar--breadcrumb" id="navbar-top">
+                <div class="collapse navbar-collapse menu-top">
+                    <div class="header__container">
+                        <ul class="header__breadcrumb">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Реставрация</a></li>
+                            <li><a href="#">Изготовление на заказ</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">События</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="header__container">
+            <div class="header__content">
+                <a href="#" class="header__logo">
+                    <div class="logo"></div>
+                </a>
+
+                <div class="header__burger">
+                    <span class="header__burger__title">Каталог</span>
+
+                    <span class="mobile-menu" type="button" data-toggle="collapse" data-target=".menu-main">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+
+                <div class="header__search">
+                    <div id="sb-search" class="sb-search">
+                        <form>
+                            <div class="sb-search-input__wrapper">
+                                <input class="sb-search-input " onkeyup="buttonUp();" placeholder="Поиск" onblur="monkey();" type="search" name="search" id="search">
+
+                                <input class="sb-search-submit" type="submit"  value="">
+
+                                <div class="sb-icon-search">
+                                    <svg class="">
+                                        <use xlink:href="icons/icons.svg#search"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <button class="btn btn__promo sb-search__btn">Найти</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="header__side">
+                    <div class="header__tel">
+                        <a href="tel:88000000000">8 (800) XXX-XXX-XX</a>
+                    </div>
+
+                    <div class="header__basket">
+                        <a href="#" class="badge-basket">
+                            <svg class="badge-basket__icon">
+                                <use xlink:href="icons/icons.svg#basket"></use>
+                            </svg>
+
+                            <div class="badge-basket__num">2</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-default navbar-static promo-mobile" id="navbar-example">
+            <div class="collapse navbar-collapse menu-main">
+                <div class="header__container">
+                    <div class="header__nav__wrapper">
+                        <div class="header__nav">
+                            <ul class="nav nav--header">
+                                <li><a href="#">Мебель</a></li>
+                                <li><a href="#">Картины</a></li>
+                                <li class="active">
+                                    <a href="#">Украшения</a>
+                                </li>
+                                <li><a href="#">Вазы</a></li>
+                                <li><a href="#">Статуэтки</a></li>
+                            </ul>
+
+                            <ul class="nav nav--header">
+                                <li><a href="#">Мебель</a></li>
+                                <li><a href="#">Картины</a></li>
+                                <li class="active">
+                                    <a href="#">Украшения</a>
+                                </li>
+                                <li><a href="#">Вазы</a></li>
+                                <li><a href="#">Статуэтки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+<div class="content">
+    <div class="content__container">
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная страница</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+        </ol>
+
+        <div class="product">
+            <div class="product__content">
+                <div class="product__main">
+                    <div class="head-h5 product__title product__title--mobile">Средиземноморский пейзаж маслом "Вид на море с балкона N2"</div>
+
+                    <div class="product__main__row">
+                        <div class="product__main__slider">
+                            <div class="product__slider">
+                                <div class="product__slider__main">
+                                    <div class="product-for">
+                                        <div class="product-for__item">
+                                            <img src="img/product-img1.jpg" class="product-for__img" alt="">
+                                        </div>
+
+                                        <div class="product-for__item">
+                                            <img src="img/promo-item-img1.jpg" class="product-for__img" alt="">
+                                        </div>
+
+                                        <div class="product-for__item">
+                                            <img src="img/product-img1.jpg" class="product-for__img" alt="">
+                                        </div>
+
+                                        <div class="product-for__item">
+                                            <img src="img/promo-item-img1.jpg" class="product-for__img" alt="">
+                                        </div>
+
+                                        <div class="product-for__item">
+                                            <img src="img/product-img1.jpg" class="product-for__img" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product__slider__nav">
+                                    <div class="product-nav">
+                                        <div class="product-nav__item">
+                                            <div class="product-nav__img" style="background: url('img/product-img1.jpg')"></div>
+                                        </div>
+
+                                        <div class="product-nav__item">
+                                            <div class="product-nav__img" style="background: url('img/promo-item-img1.jpg')"></div>
+                                        </div>
+
+                                        <div class="product-nav__item">
+                                            <div class="product-nav__img" style="background: url('img/product-img1.jpg')"></div>
+                                        </div>
+
+                                        <div class="product-nav__item">
+                                            <div class="product-nav__img" style="background: url('img/promo-item-img1.jpg')"></div>
+                                        </div>
+
+                                        <div class="product-nav__item">
+                                            <div class="product-nav__img" style="background: url('img/product-img1.jpg')"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product__main__info">
+                            <div class="head-h3 product__title product__title--main">Средиземноморский пейзаж маслом "Вид на море с балкона N2"</div>
+
+                            <ul class="product__main__description">
+                                <li><strong>Тип изделия:</strong> Картина маслом</li>
+                                <li><strong>Материалы:</strong> Рама дерево</li>
+                                <li><strong>Жанр:</strong> Пейзаж</li>
+                                <li><strong>Тема:</strong> Море</li>
+                                <li><strong>Особенности:</strong> Классика</li>
+                                <li><strong>Размер:</strong> 30х40</li>
+                                <li><strong>Автор:</strong> Иванов И.И.</li>
+                                <li><strong>Страна производства:</strong> Россиия</li>
+                            </ul>
+                        </div>
+
+                        <div class="product__main__text">
+                            <div class="head-h5 product__main__text__title">Описание</div>
+
+                            <p>Картина маслом. Папоротник, освещенный солнцем, в лесу. Картина создаст радостное и позитивное настроение в доме.</p>
+                            <p>Хорошо впишется в любой интерьер. Без багета. 40х50см. Холст на подрамнике</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__side">
+                    <div class="product__side__block">
+                        <div class="head-h1 product__side__title">313 900 руб</div>
+                    </div>
+
+                    <div class="product__side__block">
+                        <button class="btn btn__promo">
+                            Добавить в корзину
+
+                            <svg class="btn__promo__icon">
+                                <use xlink:href="icons/icons.svg#basket"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="product__side__block">
+                        <p>Бесплатная доставка по РФ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="promo-product__wrapper promo-block">
+            <div class="head-h4 promo-product__title">Похожие товары</div>
+
+            <div class="promo-product__slider">
+                <div class="promo-product">
+                    <div class="promo-product__block">
+                        <div class="promo-product__img__wrapper">
+                            <img src="img/promo-product-img1.jpg" class="promo-product__img" alt="">
+                        </div>
+
+                        <div class="promo-product__description">
+                            <p class="promo-product__description__title">Кресло Ardingley Armchair</p>
+
+                            <p class="promo-product__price">187 200 руб</p>
+
+                            <div class="promo-product__buy">
+                                <button class="btn btn__promo">
+                                    Добавить в корзину
+
+                                    <svg class="btn__promo__icon">
+                                        <use xlink:href="icons/icons.svg#basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promo-product__block">
+                        <div class="promo-product__img__wrapper">
+                            <img src="img/promo-product-img1.jpg" class="promo-product__img" alt="">
+                        </div>
+
+                        <div class="promo-product__description">
+                            <p class="promo-product__description__title">Кресло Ardingley Armchair</p>
+
+                            <p class="promo-product__price">187 200 руб</p>
+
+                            <div class="promo-product__buy">
+                                <button class="btn btn__promo">
+                                    Добавить в корзину
+
+                                    <svg class="btn__promo__icon">
+                                        <use xlink:href="icons/icons.svg#basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promo-product__block">
+                        <div class="promo-product__img__wrapper">
+                            <img src="img/promo-product-img1.jpg" class="promo-product__img" alt="">
+                        </div>
+
+                        <div class="promo-product__description">
+                            <p class="promo-product__description__title">Кресло Ardingley Armchair</p>
+
+                            <p class="promo-product__price">187 200 руб</p>
+
+                            <div class="promo-product__buy">
+                                <button class="btn btn__promo">
+                                    Добавить в корзину
+
+                                    <svg class="btn__promo__icon">
+                                        <use xlink:href="icons/icons.svg#basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promo-product__block">
+                        <div class="promo-product__img__wrapper">
+                            <img src="img/promo-product-img1.jpg" class="promo-product__img" alt="">
+                        </div>
+
+                        <div class="promo-product__description">
+                            <p class="promo-product__description__title">Кресло Ardingley Armchair</p>
+
+                            <p class="promo-product__price">187 200 руб</p>
+
+                            <div class="promo-product__buy">
+                                <button class="btn btn__promo">
+                                    Добавить в корзину
+
+                                    <svg class="btn__promo__icon">
+                                        <use xlink:href="icons/icons.svg#basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promo-product__block">
+                        <div class="promo-product__img__wrapper">
+                            <img src="img/promo-product-img1.jpg" class="promo-product__img" alt="">
+                        </div>
+
+                        <div class="promo-product__description">
+                            <p class="promo-product__description__title">Кресло Ardingley Armchair</p>
+
+                            <p class="promo-product__price">187 200 руб</p>
+
+                            <div class="promo-product__buy">
+                                <button class="btn btn__promo">
+                                    Добавить в корзину
+
+                                    <svg class="btn__promo__icon">
+                                        <use xlink:href="icons/icons.svg#basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promo-product__block">
+                        <div class="promo-product__img__wrapper">
+                            <img src="img/promo-product-img1.jpg" class="promo-product__img" alt="">
+                        </div>
+
+                        <div class="promo-product__description">
+                            <p class="promo-product__description__title">Кресло Ardingley Armchair</p>
+
+                            <p class="promo-product__price">187 200 руб</p>
+
+                            <div class="promo-product__buy">
+                                <button class="btn btn__promo">
+                                    Добавить в корзину
+
+                                    <svg class="btn__promo__icon">
+                                        <use xlink:href="icons/icons.svg#basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promo-product__block">
+                        <div class="promo-product__img__wrapper">
+                            <img src="img/promo-product-img1.jpg" class="promo-product__img" alt="">
+                        </div>
+
+                        <div class="promo-product__description">
+                            <p class="promo-product__description__title">Кресло Ardingley Armchair</p>
+
+                            <p class="promo-product__price">187 200 руб</p>
+
+                            <div class="promo-product__buy">
+                                <button class="btn btn__promo">
+                                    Добавить в корзину
+
+                                    <svg class="btn__promo__icon">
+                                        <use xlink:href="icons/icons.svg#basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promo-product__block">
+                        <div class="promo-product__img__wrapper">
+                            <img src="img/promo-product-img1.jpg" class="promo-product__img" alt="">
+                        </div>
+
+                        <div class="promo-product__description">
+                            <p class="promo-product__description__title">Кресло Ardingley Armchair</p>
+
+                            <p class="promo-product__price">187 200 руб</p>
+
+                            <div class="promo-product__buy">
+                                <button class="btn btn__promo">
+                                    Добавить в корзину
+
+                                    <svg class="btn__promo__icon">
+                                        <use xlink:href="icons/icons.svg#basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+        <div class="footer">
+            <div class="footer__container">
+                <div class="footer__row">
+                    <div class="footer__side footer__side--left">
+                        <div class="footer__logo">
+                            <a href="#" class="logo logo--white logo--footer"></a>
+                        </div>
+                    </div>
+
+                    <div class="footer__side footer__side--center">
+                        <ul class="footer__list">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Реставрация</a></li>
+                        </ul>
+
+                        <ul class="footer__list">
+                            <li><a href="#">Изготовление на заказ</a></li>
+                            <li><a href="#">События</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__side footer__side--right">
+                        <div class="footer__tel">
+                            <a href="tel:88000000000">8 (800) XXX - XX - XX</a>
+                        </div>
+
+                        <div class="footer__email">
+                            <a href="mailto:zakaz@solenesart.ru">zakaz@solenesart.ru</a>
+                        </div>
+
+                        <ul class="footer__contact">
+                            <li>
+                                <a href="#">
+                                    <svg class="footer__skype">
+                                        <use xlink:href="icons/icons.svg#skype"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="footer__web">
+                                        <use xlink:href="icons/icons.svg#credit-card"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <div class="footer__map">
+                        <a href="#">
+                            <svg class="footer__sitemap" width="43px" height="26px">
+                                <use xlink:href="icons/icons.svg#site_map"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="footer__row">
+                        <div class="footer__side footer__side--left">
+                            <p>© ИП Абрамов С. Д.</p>
+                        </div>
+
+                        <div class="footer__side footer__side--center">
+                            <ul class="promo-social promo-social--footer">
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#youtube"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#googleplus"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__side footer__side--right">
+                            <p>Разработка сайта - <a href="#">Акцент-Дон</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal right fade" id="favourite-side1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal__close modal__close--main">
+            <button type="button" class="btn " data-dismiss="modal">
+                close
+            </button>
+        </div>
+    
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                
+    
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

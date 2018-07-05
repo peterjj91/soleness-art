@@ -31805,6 +31805,68 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+    $('.product-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.product-nav'
+    });
+
+    $('.product-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.product-for',
+        dots: false,
+        arrows: false,
+        // centerMode: true,
+        focusOnSelect: true,
+        vertical: true,
+        verticalSwiping: true,
+        responsive: [
+            {
+                breakpoint: 1050,
+                settings: {
+
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    vertical: false,
+                }
+            }
+        ]
+    });
+});
+
+$(document).ready(function() {
+    $('.promo-product').slick({
+        arrows: false,
+        dots: false,
+        // centerPadding: '60px',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1050,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+});
+
+$(document).ready(function() {
     $('.slider-item').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
