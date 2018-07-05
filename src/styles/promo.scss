@@ -169,6 +169,10 @@
     @media(max-width: $screen-md){
       padding-left: 15px;
       padding-right: 15px;
+      opacity: 1;
+    }
+    @media(max-width: $screen-md){
+
     }
 
     &__inside {
@@ -197,6 +201,7 @@
       transform: translate(0%, -50%);
       right: 9px;
       top: 50%;
+      opacity: 1;
       margin-top: -7px;
     }
   }
@@ -347,6 +352,7 @@
 
     @media(max-width: $screen-md){
       padding: 10px 9px;
+      opacity: 1;
     }
   }
 
