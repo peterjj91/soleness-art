@@ -31809,8 +31809,16 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        fade: true,
-        asNavFor: '.product-nav'
+        // fade: true,
+        asNavFor: '.product-nav',
+        responsive: [
+            {
+                breakpoint: 700,
+                settings: {
+                    adaptiveHeight: true
+                }
+            }
+        ]
     });
 
     $('.product-nav').slick({

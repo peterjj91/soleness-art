@@ -46,6 +46,7 @@ button {
       fill: rgba(88, 88, 88, 0.5);
       vertical-align: top;
       margin-left: 13px;
+      overflow: visible !important;
 
       @media(max-width: $screen-sm){
         display: none;
