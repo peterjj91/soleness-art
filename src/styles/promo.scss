@@ -78,7 +78,7 @@
   &__block {
     @include make-md-column(12);
     @include make-xs-column(8);
-    overflow: hidden;
+    //overflow: hidden;
 
     @media(max-width: $screen-md){
       height: 100%;
@@ -341,7 +341,7 @@
   }
 
   &__description {
-    opacity: -1;
+    opacity: 1;
     position: absolute;
     left: 0px;
     bottom: 0px;
@@ -420,6 +420,7 @@
       &:hover, &:focus {
         color: white;
         text-decoration: none;
+        outline: none;
       }
     }
   }
@@ -681,8 +682,10 @@
       height: 27px;
     }
 
-    &:hover {
-      background-color: black;
+    &:hover, &:focus {
+      opacity: 1;
+      background-color: #242424;
+      border-color: #242424;
     }
   }
 

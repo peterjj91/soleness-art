@@ -61,14 +61,14 @@
       padding: 0;
       margin: 0;
       list-style: none;
-      font-size: 19px;
+      font-size: 16px;
       color: #585858;
 
       @media(max-width: $screen-sm){
         position: relative;
         bottom: auto;
         left: auto;
-        font-size: 18px;
+        font-size: 16px;
       }
 
       li {
@@ -101,6 +101,7 @@
 
       p {
         font-size: 16px;
+        color: #585858;
 
         @media(max-width: $screen-sm){
           font-size: 18px;
@@ -220,17 +221,17 @@
 }
 
 .promo-product {
-  margin: 0px -80px;
+  margin: 0px -50px;
   font-size: 0;
 
   @media(max-width: 1300px){
-    margin: 0px -50px;
+    margin: 0px -40px;
   }
   @media(max-width: $screen-md){
-    margin: 0px -30px;
+    margin: 0px -10px;
   }
   @media(max-width: $screen-sm){
-    margin: 0px -20px;
+    margin: 0px -10px;
   }
   @media(max-width: $screen-xs){
     //margin: 0px -20px;
@@ -259,24 +260,20 @@
 
   &__block {
     width: 100%;
-    padding: 0px 80px;
+    padding: 0px 50px;
 
     @media(max-width: 1300px){
-      padding: 0px 50px;
+      padding: 0px 40px;
     }
     @media(max-width: $screen-md){
-      padding: 0px 30px;
+      padding: 0px 10px;
     }
     @media(max-width: $screen-sm){
-      padding: 0px 20px;
+      padding: 0px 10px;
     }
     @media(max-width: $screen-xs){
       //padding: 0px 20px;
     }
-
-    //display: block !important;
-    //max-width: 240px;
-    //margin: 0 auto;
 
     &:hover {
       .promo-product {
@@ -289,7 +286,7 @@
     }
   }
 
-  &__img {
+  &__img  {
     width: 100%;
 
     &__wrapper {
@@ -300,6 +297,7 @@
   }
 
   &__buy {
+    //margin-left: -15px;
     //display: none;
     //position: absolute;
     //bottom: 19px;
@@ -322,7 +320,7 @@
       }
 
       .btn__promo__icon {
-        margin-left: 19px;
+        margin-left: 10px;
       }
     }
   }
@@ -340,7 +338,15 @@
     }
 
     &__title {
+      display: inline-block;
+      vertical-align: 5px;
+      color: #000;
       margin-bottom: 17px;
+      text-decoration: none;
+
+      &:hover, &:focus {
+        color: #000;
+      }
     }
   }
 }

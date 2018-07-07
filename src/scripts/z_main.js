@@ -10,7 +10,9 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.promo-slider').slick({
         dots: true,
-        arrows: false
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000
     });
 });
 
@@ -55,6 +57,10 @@ $(document).ready(function() {
                 }
             }
         ]
+    });
+
+    $('.product-nav').mouseover(function(){
+        $(this).click();
     });
 });
 
@@ -106,13 +112,6 @@ $(document).ready(function() {
             }
         ]
     });
-});
-
-$(document).ready(function(){
-    // $('.promo-search__icon').click(function(){
-    //     $("#recover-step1").addClass('hidden');
-    //     $("#recover-step2").addClass('visible');
-    // });
 });
 
 function buttonUp(){

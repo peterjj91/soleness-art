@@ -19,7 +19,7 @@ $screen-tablet:              $screen-sm-min;
 
 // Medium screen / desktop
 //** Deprecated `$screen-md` as of v3.0.1
-$screen-md:                  1040px;
+$screen-md:                  1170px;
 $screen-md-min:              $screen-md;
 //** Deprecated `$screen-deskrtop` as of v3.0.1
 $screen-desktop:             $screen-md-min;
@@ -60,12 +60,12 @@ $container-tablet:             (100%);
 $container-sm:                 $container-tablet;
 
 // Medium screen / desktop
-$container-desktop:            (100%);
+$container-desktop:            1130px + $grid-gutter-width;
 //** For `$screen-md-min` and up.
 $container-md:                 $container-desktop;
 
 // Large screen / wide desktop
-$container-large-desktop:      1440px + $grid-gutter-width;
+$container-large-desktop:      1130px + $grid-gutter-width;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop;
 

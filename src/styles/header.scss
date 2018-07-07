@@ -86,7 +86,7 @@
     align-items: center;
     height: 67px;
     letter-spacing: 0.3px;
-    font-size: 17px;
+    font-size: 14px;
 
     @media(max-width: $screen-md){
       height: auto;
@@ -140,12 +140,17 @@
       margin-top: 0px;
     }
 
+    &:hover, &:focus {
+      opacity: $opacity-main;
+    }
+
     &__title {
       font-family: $lora;
       font-size: 18px;
       display: inline-block;
       vertical-align: middle;
       margin-right: 21px;
+      cursor: pointer;
 
       @media(max-width: $screen-md){
         font-size: 14px;
@@ -181,11 +186,16 @@
     @media(max-width: $screen-md){
 
     }
+
+    &:hover, &:focus {
+      opacity: 1;
+    }
   }
 
   &__search {
     position: absolute;
-    left: 654px;
+    //left: 654px;
+    left: 50%;
     top: 59px;
 
     @media(max-width: $screen-md){
@@ -250,22 +260,30 @@
     text-align: center;
 
     @media (max-width: $screen-md){
-      transform: translate(-50%, 0%);
-      left: 50%;
-      margin-left: 45px;
+      //transform: translate(-50%, 0%);
+      //left: 50%;
+      //margin-left: 45px;
+      position: relative;
+      margin: 0;
+      top: auto;
+      transform: none;
+      left: auto;
+      text-align: center;
+      padding: 15px 0px;
     }
 
     @media(max-width: $screen-xs){
-      width: 100%;
-      margin: 0;
+      //width: 100%;
+      //margin: 0;
     }
 
     &__wrapper {
       height: 500px;
+      background-color: rgba(169, 169, 169, 0.8);
 
       @media (max-width: $screen-md){
         height: auto;
-        min-height: 250px;
+        min-height: 177px;
       }
     }
   }
