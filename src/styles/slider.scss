@@ -1,4 +1,58 @@
 
+.irs {
+  &-slider {
+    top: 19px;
+    width: 14px;
+    height: 14px;
+    background: #8c0303;
+    border-radius: 50%;
+  }
+
+  &-line {
+    top: 25px;
+    height: 2px;
+  }
+
+  &-line-left {
+    height: 2px;
+  }
+
+  &-line-mid {
+    height: 2px;
+    background-position: 0 0;
+  }
+
+  &-line-right {
+    height: 2px;
+  }
+
+  &-bar {
+    top: 25px;
+    height: 2px;
+    background: #8c0303;
+  }
+
+  &-bar-edge {
+    height: 2px; width: 9px;
+  }
+
+  &-from {
+    background: #8c0303;
+
+    &:after {
+      border-top-color: #8c0303;
+    }
+  }
+
+  &-to {
+    background: #8c0303;
+
+    &:after {
+      border-top-color: #8c0303;
+    }
+  }
+}
+
 .slick-slider {
   .slick-arrow {
     position: absolute;
@@ -311,8 +365,4 @@
     height: 100%;
     cursor: pointer;
   }
-}
-
-.fotorama-product {
-
 }

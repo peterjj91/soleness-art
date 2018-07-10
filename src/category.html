@@ -1,0 +1,361 @@
+//= _header.html
+
+<div class="content">
+    <div class="content__container">
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная страница</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+        </ol>
+
+        <div class="category">
+            <div class="category__catalog">
+                <div class="category__catalog__side">
+                    <div class="head-h4">Мебель</div>
+
+                    <div class="category__catalog__side__collapse">
+                        <button class="btn btn__promo" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Фильтр каталога
+                        </button>
+                    </div>
+
+                    <div class="category__catalog__side__content collapse" id="collapseExample">
+                        <div class="category__catalog__side__content__wrapper">
+                            <div class="category__catalog__side__block__wrapper">
+                                <div class="category__catalog__side__block">
+                                    <div class="head-h5 category__catalog__side__title">Тип изделия</div>
+
+                                    <div class="control-group">
+                                        <label class="control control--radio">Стулья
+                                            <input type="radio" name="radio" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+
+                                        <label class="control control--radio">Столы
+                                            <input type="radio" name="radio"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="category__catalog__side__block">
+                                    <div class="head-h5 category__catalog__side__title">Материалы</div>
+
+                                    <div class="control-group">
+                                        <label class="control control--radio">Дерево
+                                            <input type="radio" name="radio" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+
+                                        <label class="control control--radio">Металл
+                                            <input type="radio" name="radio"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="category__catalog__side__block">
+                                    <div class="head-h5 category__catalog__side__title">Жанр</div>
+
+                                    <div class="control-group">
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="category__catalog__side__block">
+                                    <div class="head-h5 category__catalog__side__title">Тема</div>
+
+                                    <div class="control-group">
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="category__catalog__side__block">
+                                    <div class="head-h5 category__catalog__side__title">Особенности</div>
+
+                                    <div class="control-group">
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="category__catalog__side__block">
+                                    <div class="head-h5 category__catalog__side__title">Автор</div>
+
+                                    <div class="control-group">
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="category__catalog__side__block">
+                                    <div class="head-h5 category__catalog__side__title">Страна производства</div>
+
+                                    <div class="control-group">
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="category__catalog__side__block category__catalog__side__block--full">
+                                    <div class="head-h5 category__catalog__side__title">Цена</div>
+
+                                    <input id="range_48" />
+
+                                    <div class="demo-big__extra">
+                                        <b id="result_48"></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category__catalog__content">
+                    <div class="category__catalog__nav">
+                        <div class="category__catalog__nav__title">Сортировать по:</div>
+                        
+                        <ul class="category__catalog__nav__list">
+                            <li><a href="#">цене (к большей)</a></li>
+                            <li><span>цене (к меньшей)</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="category__catalog__row">
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+//= _footer.html

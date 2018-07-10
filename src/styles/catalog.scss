@@ -1,0 +1,143 @@
+
+.catalog {
+  padding-bottom: 20px;
+
+  &__row {
+    //@extend %row;
+    @include make-row;
+  }
+
+  &__block {
+    @include make-xs-column(24);
+    @include make-sm-column(12);
+    @include make-md-column(8);
+    margin-bottom: 40px;
+  }
+}
+
+.item-promo {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  //height: 100%;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    margin-top: 100%;
+  }
+
+  &__box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    //position: relative;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .3);
+      z-index: 0;
+    }
+
+    &:hover {
+      .promo-item__description {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__description {
+    opacity: 1;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding: 20px 20px;
+    color: white;
+    transition: $transition-basic;
+
+    @media(max-width: $screen-md){
+      padding: 10px 9px;
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+    font-size: 19px;
+    position: relative;
+    padding-bottom: 13px;
+    margin-bottom: 10px;
+    color: white;
+
+    @media(max-width: $screen-md){
+      line-height: 13px;
+      font-size: 13px;
+      padding-bottom: 11px;
+      margin-bottom: 8px;
+    }
+
+    &:hover, &:focus {
+      color: white;
+      text-decoration: none;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: white;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    font-size: 15px;
+    min-height: 91px;
+
+    @media(max-width: $screen-md){
+      font-size: 10px;
+      min-height: 36px;
+    }
+
+    li {
+      width: 100%;
+      margin-bottom: 2px;
+
+      @media(max-width: $screen-md){
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      color: white;
+
+      &:hover, &:focus {
+        color: white;
+        text-decoration: none;
+        outline: none;
+      }
+    }
+  }
+}

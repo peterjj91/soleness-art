@@ -295,9 +295,9 @@
 
     &:before {
       @media(max-width: $screen-md){
-        content: "";
-        display: block;
-        margin-top: 100%;
+        //content: "";
+        //display: block;
+        //margin-top: 100%;
       }
     }
 

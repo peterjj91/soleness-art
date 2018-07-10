@@ -1,6 +1,7 @@
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
 @import "../../bower_components/bootstrap-select/sass/bootstrap-select";
 @import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "ion.rangeSlider";
 @import "fancybox";
 
 @import "mixins";
@@ -24,7 +25,10 @@
 @import "tab";
 @import "search";
 @import "content";
+@import "catalog";
+@import "news";
 @import "cabinet";
+@import "category";
 @import "breadcrumb";
 @import "burger";
 @import "slider";

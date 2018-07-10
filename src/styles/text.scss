@@ -80,6 +80,7 @@ a {
   &:hover, &:focus {
     opacity: $opacity-main;
     text-decoration: none;
+    outline: none;
   }
 }
 

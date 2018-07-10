@@ -22,6 +22,7 @@
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
     "bootstrap-select": "^1.13.1",
-    "fancybox": "^3.3.5"
+    "fancybox": "^3.3.5",
+    "ion.rangeSlider": "^2.2.0"
   }
 }

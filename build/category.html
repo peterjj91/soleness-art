@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main id="panel-body">
+    <div class="header">
+        <div class="header__top">
+            <div class="header__top__menu" type="button" data-toggle="collapse" data-target=".menu-top">
+                Меню
+            </div>
+
+            <nav class="navbar navbar-default navbar-static navbar--breadcrumb" id="navbar-top">
+                <div class="collapse navbar-collapse menu-top">
+                    <div class="header__container">
+                        <ul class="header__breadcrumb">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Оформление и декор</a></li>
+                            <li><a href="#">Изготовление на заказ</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">События</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="header__container">
+            <div class="header__content">
+                <a href="#" class="header__logo">
+                    <div class="logo"></div>
+                </a>
+
+                <div class="header__burger">
+                    <span class="header__burger__title" type="button" data-toggle="collapse" data-target=".menu-main">Каталог</span>
+
+                    <span class="mobile-menu" type="button" data-toggle="collapse" data-target=".menu-main">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+
+                <div class="header__search">
+                    <div id="sb-search" class="sb-search">
+                        <form>
+                            <div class="sb-search-input__wrapper">
+                                <input class="sb-search-input " onkeyup="buttonUp();" placeholder="Поиск" onblur="monkey();" type="search" name="search" id="search">
+
+                                <input class="sb-search-submit" type="submit"  value="">
+
+                                <div class="sb-icon-search">
+                                    <svg class="">
+                                        <use xlink:href="icons/icons.svg#search"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <button class="btn btn__promo sb-search__btn">Найти</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="header__side">
+                    <div class="header__tel">
+                        <a href="tel:88000000000">8 (800) XXX-XXX-XX</a>
+                    </div>
+
+                    <div class="header__basket">
+                        <a href="#" class="badge-basket">
+                            <svg class="badge-basket__icon">
+                                <use xlink:href="icons/icons.svg#basket"></use>
+                            </svg>
+
+                            <div class="badge-basket__num">2</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-default navbar-static promo-mobile" id="navbar-example">
+            <div class="collapse navbar-collapse menu-main">
+                <div class="header__container">
+                    <div class="header__nav__wrapper">
+                        <div class="header__nav">
+                            <ul class="nav nav--header">
+                                <li><a href="#">Мебель</a></li>
+                                <li><a href="#">Картины</a></li>
+                                <li class="active">
+                                    <a href="#">Украшения</a>
+                                </li>
+                                <li><a href="#">Вазы</a></li>
+                                <li><a href="#">Статуэтки</a></li>
+                            </ul>
+
+                            <ul class="nav nav--header">
+                                <li><a href="#">Мебель</a></li>
+                                <li><a href="#">Картины</a></li>
+                                <li class="active">
+                                    <a href="#">Украшения</a>
+                                </li>
+                                <li><a href="#">Вазы</a></li>
+                                <li><a href="#">Статуэтки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+<div class="content">
+    <div class="content__container">
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная страница</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+        </ol>
+
+        <div class="category">
+            <div class="category__catalog">
+                <div class="category__catalog__side">
+                    <div class="head-h4">Мебель</div>
+
+                    <div class="category__catalog__side__collapse">
+                        <button class="btn btn__promo" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Фильтр каталога
+                        </button>
+                    </div>
+
+                    <div class="category__catalog__side__content collapse" id="collapseExample">
+                        <div class="category__catalog__side__content__wrapper">
+                            <div class="category__catalog__side__block__wrapper">
+                                <div class="category__catalog__side__block">
+                                    <div class="head-h5 category__catalog__side__title">Тип изделия</div>
+
+                                    <div class="control-group">
+                                        <label class="control control--radio">Стулья
+                                            <input type="radio" name="radio" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+
+                                        <label class="control control--radio">Столы
+                                            <input type="radio" name="radio"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="category__catalog__side__block">
+                                    <div class="head-h5 category__catalog__side__title">Материалы</div>
+
+                                    <div class="control-group">
+                                        <label class="control control--radio">Дерево
+                                            <input type="radio" name="radio" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+
+                                        <label class="control control--radio">Металл
+                                            <input type="radio" name="radio"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="category__catalog__side__block">
+                                    <div class="head-h5 category__catalog__side__title">Жанр</div>
+
+                                    <div class="control-group">
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="category__catalog__side__block">
+                                    <div class="head-h5 category__catalog__side__title">Тема</div>
+
+                                    <div class="control-group">
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="category__catalog__side__block">
+                                    <div class="head-h5 category__catalog__side__title">Особенности</div>
+
+                                    <div class="control-group">
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="category__catalog__side__block">
+                                    <div class="head-h5 category__catalog__side__title">Автор</div>
+
+                                    <div class="control-group">
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="category__catalog__side__block">
+                                    <div class="head-h5 category__catalog__side__title">Страна производства</div>
+
+                                    <div class="control-group">
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+
+                                        <label class="control control--radio">Какой то параметр
+                                            <input type="radio" name="radio"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="category__catalog__side__block category__catalog__side__block--full">
+                                    <div class="head-h5 category__catalog__side__title">Цена</div>
+
+                                    <input id="range_48" />
+
+                                    <div class="demo-big__extra">
+                                        <b id="result_48"></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category__catalog__content">
+                    <div class="category__catalog__nav">
+                        <div class="category__catalog__nav__title">Сортировать по:</div>
+                        
+                        <ul class="category__catalog__nav__list">
+                            <li><a href="#">цене (к большей)</a></li>
+                            <li><span>цене (к меньшей)</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="category__catalog__row">
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category__catalog__block">
+                            <div class="catalog-item">
+                                <a href="#" class="catalog-item__img__wrapper" tabindex="0">
+                                    <img src="img/promo-product-img1.jpg" class="catalog-item__img" alt="">
+                                </a>
+
+                                <div class="catalog-item__description">
+                                    <a href="#" class="catalog-item__description__title" tabindex="0">Кресло Ardingley Armchair</a>
+
+                                    <p class="catalog-item__price">187 200 руб</p>
+
+                                    <div class="catalog-item__buy">
+                                        <button class="btn btn__promo" tabindex="0">
+                                            Добавить в корзину
+
+                                            <svg class="btn__promo__icon">
+                                                <use xlink:href="icons/icons.svg#basket"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+        <div class="footer">
+            <div class="footer__container">
+                <div class="footer__row">
+                    <div class="footer__side footer__side--left">
+                        <div class="footer__logo">
+                            <a href="#" class="logo logo--white logo--footer"></a>
+                        </div>
+                    </div>
+
+                    <div class="footer__side footer__side--center">
+                        <ul class="footer__list">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Реставрация</a></li>
+                        </ul>
+
+                        <ul class="footer__list">
+                            <li><a href="#">Изготовление на заказ</a></li>
+                            <li><a href="#">События</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__side footer__side--right">
+                        <div class="footer__tel">
+                            <a href="tel:88000000000">8 (800) XXX - XX - XX</a>
+                        </div>
+
+                        <div class="footer__email">
+                            <a href="mailto:zakaz@solenesart.ru">zakaz@solenesart.ru</a>
+                        </div>
+
+                        <ul class="footer__contact">
+                            <li>
+                                <a href="#">
+                                    <svg class="footer__skype">
+                                        <use xlink:href="icons/icons.svg#skype"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="footer__web">
+                                        <use xlink:href="icons/icons.svg#credit-card"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <div class="footer__map">
+                        <a href="#">
+                            <svg class="footer__sitemap" width="43px" height="26px">
+                                <use xlink:href="icons/icons.svg#site_map"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="footer__row">
+                        <div class="footer__side footer__side--left">
+                            <p>© ИП Абрамов С. Д.</p>
+                        </div>
+
+                        <div class="footer__side footer__side--center">
+                            <ul class="promo-social promo-social--footer">
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#youtube"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="promo-social__item">
+                                        <svg class="">
+                                            <use xlink:href="icons/icons.svg#googleplus"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__side footer__side--right">
+                            <p>Разработка сайта - <a href="#">Акцент-Дон</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal right fade" id="favourite-side1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal__close modal__close--main">
+            <button type="button" class="btn " data-dismiss="modal">
+                close
+            </button>
+        </div>
+    
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                
+    
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
