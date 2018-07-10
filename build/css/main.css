@@ -7316,9 +7316,6 @@ button {
       vertical-align: top;
       margin-left: 13px;
       overflow: visible !important; }
-      @media (max-width: 700px) {
-        .btn__promo__icon {
-          display: none; } }
 
 .bootstrap-select {
   border-radius: 100px;
@@ -7594,26 +7591,45 @@ input {
     color: white; }
 
 .nav--header {
+  padding: 10px 20px 15px 0px;
   display: inline-block;
   vertical-align: top;
   text-align: left;
   font-family: "lora";
   font-size: 18px;
-  background-color: rgba(169, 169, 169, 0.8); }
+  background-color: rgba(169, 169, 169, 0.9); }
   @media (max-width: 1170px) {
     .nav--header {
+      padding: 0px 0px 5px 0px;
       display: block;
       font-size: 10px;
       margin-top: 0px;
       text-align: center; } }
-  .nav--header li a {
-    color: white; }
-    @media (max-width: 1170px) {
-      .nav--header li a {
-        padding-top: 6px;
-        padding-bottom: 6px; } }
-    .nav--header li a:hover, .nav--header li a:focus {
+  .nav--header li {
+    margin-bottom: 10px; }
+    .nav--header li:last-child {
+      margin-bottom: 0; }
+    .nav--header li a {
       color: white; }
+      @media (max-width: 1170px) {
+        .nav--header li a {
+          padding-top: 6px;
+          padding-bottom: 6px; } }
+      .nav--header li a:hover, .nav--header li a:focus {
+        background-color: transparent;
+        color: white; }
+    @media (max-width: 1170px) {
+      .nav--header li ul {
+        list-style: none;
+        padding-left: 0;
+        padding-top: 10px;
+        font-size: 12px; } }
+  @media (max-width: 1170px) {
+    .nav--header > li {
+      margin-bottom: 20px; } }
+  @media (max-width: 1170px) {
+    .nav--header > li > a {
+      font-size: 18px; } }
 
 .header {
   width: 100%;
@@ -7814,6 +7830,8 @@ input {
     margin-left: 361px; }
     @media (max-width: 1170px) {
       .header__nav {
+        max-height: 300px;
+        overflow: auto;
         margin-left: 0; } }
     .header__nav__wrapper {
       font-size: 0; }
@@ -9280,16 +9298,19 @@ input {
       display: block;
       margin-top: 100%; }
 
-.catalog-item__buy .btn {
-  border-color: transparent;
-  padding: 5px 15px 6px 15px;
-  font-size: 13px;
-  line-height: 21px; }
-  @media (max-width: 480px) {
-    .catalog-item__buy .btn {
-      width: 100%; } }
-  .catalog-item__buy .btn .btn__promo__icon {
-    margin-left: 10px; }
+.catalog-item__buy {
+  float: right;
+  margin: -6px 0px 0px 0px; }
+  .catalog-item__buy .btn {
+    border-color: transparent;
+    padding: 5px 12px 6px 5px;
+    line-height: 21px;
+    font-size: 0; }
+    @media (max-width: 480px) {
+      .catalog-item__buy .btn {
+        width: 100%; } }
+    .catalog-item__buy .btn .btn__promo__icon {
+      margin-left: 10px; }
 
 .catalog-item__description {
   position: relative;
@@ -9297,14 +9318,23 @@ input {
   padding-top: 26px;
   font-size: 16px;
   padding-bottom: 26px; }
+  @media (max-width: 480px) {
+    .catalog-item__description {
+      padding-left: 12px;
+      padding-right: 12px; } }
   .catalog-item__description__title {
     display: inline-block;
-    vertical-align: 5px;
+    vertical-align: top;
+    width: 100%;
     color: #000;
     margin-bottom: 17px;
     text-decoration: none; }
     .catalog-item__description__title:hover, .catalog-item__description__title:focus {
       color: #000; }
+
+.catalog-item__price {
+  display: inline-block;
+  vertical-align: top; }
 
 .breadcrumb {
   padding: 0;
@@ -9973,6 +10003,17 @@ input {
   @media (max-width: 700px) {
     .promo-product .slick-list {
       padding: 0 !important; } }
+  .promo-product .slick-slide[data-slick-index="3"] .catalog-item__buy {
+    margin-right: 2px; }
+  @media (max-width: 1170px) {
+    .promo-product .slick-slide[data-slick-index="2"] .catalog-item__buy {
+      margin-right: 2px; } }
+  @media (max-width: 700px) {
+    .promo-product .slick-slide[data-slick-index="2"] .catalog-item__buy {
+      margin-right: 14px; } }
+  @media (max-width: 480px) {
+    .promo-product .slick-slide[data-slick-index="2"] .catalog-item__buy {
+      margin-right: 12px; } }
   .promo-product__wrapper {
     overflow: hidden; }
   @media (max-width: 700px) {

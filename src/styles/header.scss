@@ -260,6 +260,8 @@
     //text-align: center;
 
     @media (max-width: $screen-md){
+      max-height: 300px;
+      overflow: auto;
       //transform: translate(-50%, 0%);
       //left: 50%;
       //margin-left: 45px;
@@ -287,6 +289,12 @@
         //height: auto;
         //min-height: 177px;
         padding: 0px 12px;
+      }
+
+      &:before {
+        //content: '';
+        //margin-top: 100%;
+        //display: block;
       }
     }
   }

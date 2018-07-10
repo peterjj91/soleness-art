@@ -243,6 +243,28 @@
     }
   }
 
+  .slick-slide {
+    &[data-slick-index="3"]{
+      .catalog-item__buy {
+        margin-right: 2px;
+      }
+    }
+
+    &[data-slick-index="2"]{
+      .catalog-item__buy {
+        @media(max-width: $screen-md){
+          margin-right: 2px;
+        }
+        @media(max-width: $screen-sm){
+          margin-right: 14px;
+        }
+        @media(max-width: $screen-xs){
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+
   &__wrapper {
     overflow: hidden;
   }

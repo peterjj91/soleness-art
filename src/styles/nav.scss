@@ -1,14 +1,16 @@
 
 .nav {
   &--header {
+    padding: 10px 20px 15px 0px;
     display: inline-block;
     vertical-align: top;
     text-align: left;
     font-family: $lora;
     font-size: 18px;
-    background-color: rgba(169, 169, 169, 0.8);
+    background-color: rgba(169, 169, 169, 0.9);
 
     @media(max-width: $screen-md){
+      padding: 0px 0px 5px 0px;
       display: block;
       font-size: 10px;
       //margin-top: 20px;
@@ -17,6 +19,12 @@
     }
 
     li {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
       a {
         //color: black;
         color: white;
@@ -29,7 +37,29 @@
 
         &:hover, &:focus {
           //color: black;
+          background-color: transparent;
           color: white;
+        }
+      }
+
+      ul {
+        @media(max-width: $screen-md){
+          list-style: none;
+          padding-left: 0;
+          padding-top: 10px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    & > li {
+      @media(max-width: $screen-md){
+        margin-bottom: 20px;
+      }
+
+      & > a {
+        @media(max-width: $screen-md){
+          font-size: 18px;
         }
       }
     }

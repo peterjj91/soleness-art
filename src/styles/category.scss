@@ -226,6 +226,8 @@
   }
 
   &__buy {
+    float: right;
+    margin: -6px 0px 0px 0px;
     //margin-left: -15px;
     //display: none;
     //position: absolute;
@@ -241,9 +243,10 @@
 
     .btn {
       border-color: transparent;
-      padding: 5px 15px 6px 15px;
-      font-size: 13px;
+      padding: 5px 12px 6px 5px;
+      //font-size: 13px;
       line-height: 21px;
+      font-size: 0;
 
       @media(max-width: $screen-xs){
         width: 100%;
@@ -259,17 +262,22 @@
     position: relative;
     font-family: $lora;
     padding-top: 26px;
+
     font-size: 16px;
     padding-bottom: 26px;
 
-    @media(max-width: $screen-sm){
-      //padding-right: 12px;
-      //padding-left: 12px;
+    @media(max-width: $screen-md){
+
+    }
+    @media(max-width: $screen-xs){
+      padding-left: 12px;
+      padding-right: 12px;
     }
 
     &__title {
       display: inline-block;
-      vertical-align: 5px;
+      vertical-align: top;
+      width: 100%;
       color: #000;
       margin-bottom: 17px;
       text-decoration: none;
@@ -278,5 +286,10 @@
         color: #000;
       }
     }
+  }
+
+  &__price {
+    display: inline-block;
+    vertical-align: top;
   }
 }

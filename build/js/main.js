@@ -31976,11 +31976,15 @@ $(document).ready(function() {
 
     $(".product-nav").mousewheel(function(e) {
         e.preventDefault();
-        if (e.originalEvent.deltaY < 0) {
+        if (e.originalEvent.deltaY > 0) {
             $(this).slick('slickNext');
         } else {
             $(this).slick('slickPrev');
         }
+    });
+
+    $('.product-nav').mouseover(function(e){
+        $('.product-for').slick("slickNext");
     });
 });
 
@@ -31988,7 +31992,6 @@ $(document).ready(function() {
     $('.promo-product').slick({
         arrows: false,
         dots: false,
-        // centerPadding: '60px',
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
@@ -32007,6 +32010,15 @@ $(document).ready(function() {
                 }
             }
         ]
+    });
+
+    $(".promo-product").mousewheel(function(e) {
+        e.preventDefault();
+        if (e.originalEvent.deltaY < 0) {
+            $(this).slick('slickNext');
+        } else {
+            $(this).slick('slickPrev');
+        }
     });
 });
 
