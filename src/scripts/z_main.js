@@ -272,3 +272,11 @@ $(document).ready(function(){
 
     });
 });
+
+
+$(document).ready(function() {
+    $('.responsive-table').stacktable();
+});
+
+
+new WOW().init();

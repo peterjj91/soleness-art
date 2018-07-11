@@ -1,6 +1,7 @@
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
 @import "../../bower_components/bootstrap-select/sass/bootstrap-select";
 @import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "animate";
 @import "ion.rangeSlider";
 @import "fancybox";
 
@@ -28,6 +29,7 @@
 @import "catalog";
 @import "news";
 @import "article";
+@import "stacktable";
 @import "order";
 @import "about";
 @import "cabinet";

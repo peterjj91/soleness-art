@@ -57,4 +57,8 @@
   &__map {
     @include sprite($icon-map);
   }
+
+  &__close {
+    @include sprite($icon-close);
+  }
 }

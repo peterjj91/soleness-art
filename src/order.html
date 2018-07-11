@@ -7,7 +7,7 @@
 
             <div class="head-h1">Оформление заказа</div>
 
-            <table class="table order__table">
+            <table class="table order__table responsive-table">
                 <thead>
                 <tr>
                     <td>Фото</td>
@@ -21,7 +21,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <img src="" class="order__table__img" alt="">
+                        <img src="img/order-img1.jpg" class="order__table__img" alt="">
                     </td>
                     <td>
                         <div class="head-h4">Кресло Ardingley Armchair</div>
@@ -50,11 +50,118 @@
                         374 400 руб
                     </td>
                     <td>
+                        <div class="order__table__close">
+                            <div class="icon icon__close"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/order-img1.jpg" class="order__table__img" alt="">
+                    </td>
+                    <td>
+                        <div class="head-h4">Кресло Ardingley Armchair</div>
+                    </td>
+                    <td>
+                        <div class="promo-count input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
 
+                            <input type="text" name="quant[1]" class="form-control promo-count__number" value="1" min="1" max="10">
+
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-number" data-type="plus" data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        187 200 руб
+                    </td>
+                    <td>
+                        374 400 руб
+                    </td>
+                    <td>
+                        <div class="order__table__close">
+                            <div class="icon icon__close"></div>
+                        </div>
                     </td>
                 </tr>
                 </tbody>
             </table>
+
+            <div class="order__total">
+                <div class="order__total__text">
+                    <button class="btn btn__promo">
+                        Вернуться в корзину
+                    </button>
+                </div>
+
+                <div class="order__total__price">
+                    <div class="head-h4"><strong>Итого 700 000 руб</strong></div>
+                </div>
+            </div>
+
+            <div class="form-order">
+                <div class="form-order__info">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            Фио
+                        </span>
+
+                        <input type="text" class="form-control" placeholder="Search for...">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            E-mail
+                        </span>
+
+                        <input type="text" class="form-control" placeholder="Search for...">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            Телефон
+                        </span>
+
+                        <input type="text" class="form-control" placeholder="Search for...">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            Город
+                        </span>
+
+                        <input type="text" class="form-control" placeholder="Search for...">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            Адрес
+                        </span>
+
+                        <input type="text" class="form-control" placeholder="Search for...">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            Примечание
+                        </span>
+
+                        <!--<input type="text" class="form-control" placeholder="Search for...">-->
+                        <textarea name="" id="" cols="30" class="form-control" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-order__delivery">
+
+                </div>
+            </div>
 
         </div>
 

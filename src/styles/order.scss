@@ -2,29 +2,120 @@
 .order {
 
   &__table {
+    margin-bottom: 50px;
     font-size: 18px;
+    font-family: $scada;
+
+    img {
+      @media(max-width: $screen-md){
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    &__close {
+      display: inline-block;
+      vertical-align: top;
+      cursor: pointer;
+    }
 
     thead {
+      font-size: 16px;
+      border: 1px solid rgba(0, 0, 0, .11);
+
       tr {
         td {
+          padding: 13px 0px;
+          text-align: center;
 
+          &:first-child {
+            text-align: center;
+            width: 168px;
+          }
+
+          &:nth-child(2){
+            padding-left: 50px;
+            text-align: left;
+          }
+          &:last-child {
+            padding-right: 0px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          vertical-align: middle;
+          padding-top: 50px;
+          padding-bottom: 50px;
+          padding-left: 0;
+          padding-right: 0;
+          text-align: center;
+
+          &:first-child {
+            text-align: left;
+          }
+
+          &:nth-child(2){
+            padding-left: 50px;
+            text-align: left;
+          }
+
+          &:last-child {
+            padding-right: 0px;
+          }
+        }
+
+        &:last-child {
+          td {
+            border-bottom: 1px solid #ddd;
+          }
         }
       }
     }
 
     .promo-count {
-      margin-left: -14px;
+      //margin-left: -14px;
     }
 
     .head-h4 {
       margin-bottom: 0;
     }
   }
+
+  &__total {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+
+    &__text {
+      float: left;
+    }
+
+    &__price {
+      float: right;
+    }
+  }
+}
+
+.form-order {
+
+
+  &__info {
+
+  }
+
+  &__delivery {
+
+  }
 }
 
 .promo-count {
   display: inline-block;
   vertical-align: top;
+  white-space: nowrap;
 
   .input-group-btn {
     display: inline-block !important;
@@ -41,5 +132,15 @@
     padding-left: 0px;
     padding-right: 0px;
     font-size: 24px;
+  }
+}
+
+.st-head-row {
+  &.st-head-row-main {
+    padding-top: 10px;
+
+    @media(max-width: $screen-md){
+      text-align: center;
+    }
   }
 }
