@@ -40,7 +40,7 @@
     background: #8c0303;
 
     &:after {
-      border-top-color: #8c0303;
+      border-color: #8c0303;
     }
   }
 
@@ -48,7 +48,7 @@
     background: #8c0303;
 
     &:after {
-      border-top-color: #8c0303;
+      border-color: #8c0303;
     }
   }
 }
@@ -115,15 +115,15 @@
   &__item {
     vertical-align: top;
     position: relative;
-    //height: 100%;
+    height: 100%;
     overflow: hidden;
 
     @media(max-width: $screen-md){
-      //height: 220px;
+      height: 220px;
       position: relative;
     }
     @media(max-width: $screen-xs){
-      //height: auto;
+      height: auto;
       width: 100%;
     }
 
@@ -135,14 +135,12 @@
   }
 
   &__img {
-    width: 100%;
-
     @media(max-width: $screen-md){
-      //position: absolute;
-      //transform: translate(-50%, -50%);
-      //top: 50%;
-      //left: 50%;
-      //width: 100%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      width: 100%;
     }
     @media(max-width: $screen-xs){
       position: relative;
@@ -242,7 +240,6 @@
     width: 100%;
     text-align: center;
     padding: 0;
-    margin: 0;
 
     li {
       display: inline-block;
@@ -280,17 +277,39 @@
 
 .slider-item {
   height: 263px;
-  overflow: hidden;
+  //overflow: hidden;
+  margin-left: -20px;
+  margin-right: -20px;
 
   @media(max-width: $screen-md){
     height: auto;
+    margin-left: -12px;
+    margin-right: -12px;
   }
 
   .slick-list {
-    margin: 0px 37px;
+    //margin: 0px 37px;
 
     @media(max-width: $screen-xs){
       margin: 0;
+    }
+  }
+
+  .slick-arrow {
+    &.slick-prev {
+      left: -15px ;
+
+      @media(max-width: 1220px){
+        left: 0;
+      }
+    }
+
+    &.slick-next {
+      right: -15px;
+
+      @media(max-width: 1220px){
+        right: 0;
+      }
     }
   }
 }

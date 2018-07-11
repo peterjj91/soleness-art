@@ -230,16 +230,60 @@
 <div class="content">
     <div class="content__container">
 
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="product.html">Товар</a></li>
-            <li><a href="category.html">Категория</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="news.html">События</a></li>
-            <li><a href="text.html">Текстовая</a></li>
-            <li><a href="about.html">О компании</a></li>
-            <li><a href="order.html">Оформление заказа</a></li>
-        </ul>
+        <div class="order">
+
+            <div class="head-h1">Оформление заказа</div>
+
+            <table class="table order__table">
+                <thead>
+                <tr>
+                    <td>Фото</td>
+                    <td>Название</td>
+                    <td>Количество</td>
+                    <td>Цена</td>
+                    <td>Стоимость</td>
+                    <td>Удалить</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <img src="" class="order__table__img" alt="">
+                    </td>
+                    <td>
+                        <div class="head-h4">Кресло Ardingley Armchair</div>
+                    </td>
+                    <td>
+                        <div class="promo-count input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+
+                            <input type="text" name="quant[1]" class="form-control promo-count__number" value="1" min="1" max="10">
+
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-number" data-type="plus" data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        187 200 руб
+                    </td>
+                    <td>
+                        374 400 руб
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
 
     </div>
 </div>

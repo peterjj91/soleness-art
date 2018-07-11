@@ -1,0 +1,45 @@
+
+.order {
+
+  &__table {
+    font-size: 18px;
+
+    thead {
+      tr {
+        td {
+
+        }
+      }
+    }
+
+    .promo-count {
+      margin-left: -14px;
+    }
+
+    .head-h4 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.promo-count {
+  display: inline-block;
+  vertical-align: top;
+
+  .input-group-btn {
+    display: inline-block !important;
+    width: auto !important;
+  }
+
+  &__number {
+    float: none !important;
+    display: inline-block !important;
+    border: none;
+    box-shadow: none;
+    width: 36px !important;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 24px;
+  }
+}
