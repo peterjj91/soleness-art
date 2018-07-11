@@ -1,9 +1,7 @@
 .product {
-  margin-bottom: 82px;
 
   @media(max-width: $screen-sm) {
     padding-top: 18px;
-    margin-bottom: 40px;
   }
 
   &__content {

@@ -7,11 +7,11 @@
 }
 
 .promo-main {
-  height: 500px;
+  //height: 500px;
   overflow: hidden;
 
   @media(max-width: $screen-md){
-    height: auto;
+    //height: auto;
   }
 
   &__row {
@@ -24,19 +24,21 @@
     }
 
     &--big {
-      @include make-md-column(15.4);
+      //@include make-md-column(15.4);
       @include make-xs-column(24);
+      margin-bottom: 50px;
       overflow: hidden;
 
       @media(max-width: $screen-md){
         padding-left: 12px !important;
         padding-right: 12px !important;
+        margin-bottom: 12px;
       }
     }
 
     &--mini {
-      @include make-md-column(8);
-      @include make-md-column-offset(0.6);
+      //@include make-md-column(8);
+      //@include make-md-column-offset(0.6);
       @include make-xs-column(24);
       margin-bottom: 0;
 
@@ -191,7 +193,7 @@
   }
 
   &__text {
-    opacity: -1;
+    //opacity: -1;
     position: absolute;
     bottom: 33px;
     right: 46px;

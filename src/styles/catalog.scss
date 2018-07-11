@@ -1,7 +1,5 @@
 
 .catalog {
-  padding-bottom: 20px;
-
   &__row {
     //@extend %row;
     @include make-row;
