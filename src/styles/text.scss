@@ -90,3 +90,48 @@ a {
     color: $color-promo;
   }
 }
+
+.ul {
+  &--num {
+    padding-left: 15px;
+    list-style: decimal;
+  }
+
+  &--circle {
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      position: relative;
+      padding-left: 15px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 11px;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: $color-promo;
+      }
+    }
+  }
+}
+
+.table {
+  tbody {
+    tr {
+      td {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 6px;
+        padding-bottom: 7px;
+
+        &:nth-child(2+1n){
+          background: #f6f6f6;
+        }
+      }
+    }
+  }
+}

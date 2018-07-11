@@ -1,0 +1,45 @@
+
+.article {
+  padding-bottom: 70px;
+
+  &__row {
+    //@include make-row;
+    @extend %row;
+  }
+
+  &__img {
+    @include make-xs-column(24);
+    @include make-sm-column(7.4);
+    @include make-md-column(7.4);
+    @include make-lg-column(6.7);
+
+    @media(max-width: $screen-md){
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+    }
+    @media(max-width: $screen-sm){
+      margin-bottom: 40px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__description {
+    @include make-xs-column(24);
+    @include make-sm-column(16.5);
+    @include make-md-column(16.5);
+    @include make-lg-column(16.5);
+    @include make-lg-column-offset(0.8);
+
+    @media(max-width: $screen-md){
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+    }
+
+    p {
+      line-height: 30px;
+    }
+  }
+}
