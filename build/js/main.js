@@ -32366,10 +32366,14 @@ $(document).ready(function(){
     });
 });
 
-
 $(document).ready(function() {
     $('.responsive-table').stacktable();
 });
 
+$(document).click(function(e) {
+    if (!$(e.target).is('.header__nav')) {
+        $('.collapse').collapse('hide');
+    }
+});
 
 new WOW().init();

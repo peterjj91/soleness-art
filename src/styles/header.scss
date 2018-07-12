@@ -127,21 +127,27 @@
   }
 
   &__burger {
-    position: absolute;
-    left: 350px;
-    margin-top: 4px;
-    //margin-left: 15px;
-    z-index: 1;
+    &__wrapper {
+      position: absolute;
+      left: 350px;
+      margin-top: 4px;
+      //margin-left: 15px;
+      z-index: 1;
 
-    @media(max-width: $screen-md){
-      transform: translate(-50%, 0%);
-      top: 42px;
-      left: 50%;
-      margin-top: 0px;
-    }
+      @media(max-width: $screen-md){
+        transform: translate(-50%, 0%);
+        top: 42px;
+        left: 50%;
+        margin-top: 0px;
+      }
 
-    &:hover, &:focus {
-      opacity: $opacity-main;
+      &:hover, &:focus {
+        //opacity: $opacity-main;
+      }
+
+      .promo-mobile {
+
+      }
     }
 
     &__title {
@@ -195,7 +201,7 @@
   &__search {
     position: absolute;
     //left: 654px;
-    left: 45%;
+    left: 52%;
     top: 59px;
 
     @media(max-width: $screen-md){
@@ -255,12 +261,14 @@
   &__nav {
     //position: absolute;
     //top: 20px;
-    margin-left: 361px;
+    //margin-left: 361px;
     //left: 361px;
     //text-align: center;
+    white-space: nowrap;
+    background-color: dimgrey;
 
     @media (max-width: $screen-md){
-      max-height: 300px;
+      //max-height: 300px;
       overflow: auto;
       //transform: translate(-50%, 0%);
       //left: 50%;
@@ -288,7 +296,7 @@
       @media (max-width: $screen-md){
         //height: auto;
         //min-height: 177px;
-        padding: 0px 12px;
+        //padding: 0px 12px;
       }
 
       &:before {

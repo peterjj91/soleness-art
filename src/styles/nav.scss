@@ -1,17 +1,17 @@
 
 .nav {
   &--header {
-    padding: 10px 20px 15px 0px;
+    padding: 5px 26px 15px 0px;
     display: inline-block;
     vertical-align: top;
     text-align: left;
     font-family: $lora;
     font-size: 18px;
-    background-color: rgba(169, 169, 169, 1);
+    //background-color: rgba(169, 169, 169, 1);
 
     @media(max-width: $screen-md){
       padding: 0px 0px 5px 0px;
-      display: block;
+      display: inline-block;
       font-size: 10px;
       //margin-top: 20px;
       margin-top: 0px;
