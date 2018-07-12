@@ -128,9 +128,9 @@
 
   &__burger {
     position: absolute;
-    left: 361px;
+    left: 350px;
     margin-top: 4px;
-    margin-left: 15px;
+    //margin-left: 15px;
     z-index: 1;
 
     @media(max-width: $screen-md){
@@ -195,7 +195,7 @@
   &__search {
     position: absolute;
     //left: 654px;
-    left: 50%;
+    left: 45%;
     top: 59px;
 
     @media(max-width: $screen-md){

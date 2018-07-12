@@ -507,6 +507,8 @@
   flex-direction: row;
   align-items: center;
   font-family: $lora;
+  //margin-left: -5px;
+  //margin-right: -5px;
 
   @media(max-width: $screen-md){
     display: inline-block;
@@ -517,14 +519,22 @@
 
   li {
     display: inline-block;
+    padding-right: 20px;
+    //@include make-xs-column(24);
+    //@include make-md-column(6);
+    //padding-left: 5px !important;
+    //padding-right: 5px !important;
 
     @media(max-width: $screen-md){
       margin-bottom: 21px;
+      padding-right: 0;
       width: 100%;
       vertical-align: top;
     }
 
     &:last-child {
+      padding-right: 0;
+
       @media(max-width: $screen-md){
         margin-bottom: 0;
       }
@@ -532,14 +542,16 @@
   }
 
   &__item {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
+    display: table;
+    //display: flex;
+    //justify-content: space-between;
+    //flex-direction: row;
+    //align-items: center;
 
     @media(max-width: $screen-md){
-      justify-content: left;
+      //justify-content: left;
       margin: 0 auto;
+      width: 100%;
       max-width: 212px;
     }
 
@@ -562,7 +574,8 @@
     }
 
     &__icon {
-      display: inline-block;
+      display: table-cell;
+      vertical-align: middle;
       width: 70px;
       @media(max-width: $screen-md){
         min-width: 37px;
@@ -580,8 +593,9 @@
     }
 
     &__text {
-      display: inline-block;
-      max-width: 200px;
+      display: table-cell;
+      vertical-align: middle;
+      //max-width: 200px;
       line-height: 30px;
       @media(max-width: $screen-md){
         line-height: normal;
@@ -609,8 +623,8 @@
 
   &__list {
     @extend %row;
-    margin-left: -35px !important;
-    margin-right: -35px !important;
+    //margin-left: -35px !important;
+    //margin-right: -35px !important;
     margin-bottom: 0;
     padding: 0;
     list-style: none;
@@ -623,13 +637,16 @@
     li {
       @include make-md-column(12);
       @include make-xs-column(24);
-      padding-left: 35px;
-      padding-right: 35px;
+
+      //padding-left: 35px;
+      //padding-right: 35px;
 
       @media(max-width: $screen-md){
         //padding-left: 15px;
         //padding-right: 15px;
         margin-bottom: 10px;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
       }
 
       &:last-child {

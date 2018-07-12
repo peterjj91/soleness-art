@@ -8870,9 +8870,8 @@ input {
         text-decoration: none; }
   .header__burger {
     position: absolute;
-    left: 361px;
+    left: 350px;
     margin-top: 4px;
-    margin-left: 15px;
     z-index: 1; }
     @media (max-width: 1170px) {
       .header__burger {
@@ -8918,7 +8917,7 @@ input {
     opacity: 1; }
   .header__search {
     position: absolute;
-    left: 50%;
+    left: 45%;
     top: 59px; }
     @media (max-width: 1170px) {
       .header__search {
@@ -9593,36 +9592,33 @@ input {
       padding-top: 18px;
       padding-bottom: 33px; } }
   .promo-plus li {
-    display: inline-block; }
+    display: inline-block;
+    padding-right: 20px; }
     @media (max-width: 1170px) {
       .promo-plus li {
         margin-bottom: 21px;
+        padding-right: 0;
         width: 100%;
         vertical-align: top; } }
-    @media (max-width: 1170px) {
-      .promo-plus li:last-child {
-        margin-bottom: 0; } }
+    .promo-plus li:last-child {
+      padding-right: 0; }
+      @media (max-width: 1170px) {
+        .promo-plus li:last-child {
+          margin-bottom: 0; } }
   .promo-plus__item {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-align: center;
-    align-items: center; }
+    display: table; }
     @media (max-width: 1170px) {
       .promo-plus__item {
-        -ms-flex-pack: left;
-        justify-content: left;
         margin: 0 auto;
+        width: 100%;
         max-width: 212px; } }
     .promo-plus__item:hover .promo-plus__item__icon svg {
       fill: #ae8c64; }
     .promo-plus__item:hover .promo-plus__item__text p {
       color: #ae8c64; }
     .promo-plus__item__icon {
-      display: inline-block;
+      display: table-cell;
+      vertical-align: middle;
       width: 70px; }
       @media (max-width: 1170px) {
         .promo-plus__item__icon {
@@ -9635,8 +9631,8 @@ input {
             width: 30px;
             height: 30px; } }
     .promo-plus__item__text {
-      display: inline-block;
-      max-width: 200px;
+      display: table-cell;
+      vertical-align: middle;
       line-height: 30px; }
       @media (max-width: 1170px) {
         .promo-plus__item__text {
@@ -9654,8 +9650,6 @@ input {
   .promo-baner__wrapper {
     overflow: hidden; }
   .promo-baner__list {
-    margin-left: -35px !important;
-    margin-right: -35px !important;
     margin-bottom: 0;
     padding: 0;
     list-style: none; }
@@ -9669,16 +9663,16 @@ input {
       width: 100%;
       min-height: 1px;
       padding-left: 20px;
-      padding-right: 20px;
-      padding-left: 35px;
-      padding-right: 35px; }
+      padding-right: 20px; }
       @media (min-width: 1170px) {
         .promo-baner__list li {
           float: left;
           width: 50%; } }
       @media (max-width: 1170px) {
         .promo-baner__list li {
-          margin-bottom: 10px; } }
+          margin-bottom: 10px;
+          padding-left: 12px !important;
+          padding-right: 12px !important; } }
       @media (max-width: 1170px) {
         .promo-baner__list li:last-child {
           margin-bottom: 0; } }
