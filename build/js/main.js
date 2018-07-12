@@ -32122,16 +32122,6 @@ $(document).ready(function() {
 });
 
 $(document).ready(function () {
-    // var $range = $("#range_48"),
-    //     $result = $("#result_48");
-
-    // var track = function () {
-    //     var $this = $(this),
-    //         value = $this.prop("value").split(";");
-    //
-    //     $result.html(value[0] + " - " + value[1]);
-    // };
-
     $("#range_48").ionRangeSlider({
         type: "double",
         min: 0,
@@ -32140,8 +32130,6 @@ $(document).ready(function () {
         to: 80,
         postfix: " руб",
     });
-
-    // $range.on("change", track);
 });
 
 $(document).ready(function() {
@@ -32260,7 +32248,7 @@ $(document).ready(function() {
 
     $(".slider-item").mousewheel(function(e) {
         e.preventDefault();
-        if (e.originalEvent.deltaY < 0) {
+        if (e.originalEvent.deltaY > 0) {
             $(this).slick('slickNext');
         } else {
             $(this).slick('slickPrev');

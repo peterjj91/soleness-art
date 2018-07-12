@@ -7,7 +7,7 @@
     text-align: left;
     font-family: $lora;
     font-size: 18px;
-    background-color: rgba(169, 169, 169, 0.9);
+    background-color: rgba(169, 169, 169, 1);
 
     @media(max-width: $screen-md){
       padding: 0px 0px 5px 0px;
@@ -43,6 +43,8 @@
       }
 
       ul {
+        font-size: 15px;
+
         @media(max-width: $screen-md){
           list-style: none;
           padding-left: 0;

@@ -73,7 +73,7 @@
   &__title {
     display: inline-block;
     vertical-align: top;
-    line-height: 20px;
+    line-height: 24px;
     font-size: 19px;
     position: relative;
     padding-bottom: 13px;
@@ -109,6 +109,7 @@
     margin: 0;
     font-size: 15px;
     min-height: 91px;
+    line-height: 24px;
 
     @media(max-width: $screen-md){
       font-size: 10px;

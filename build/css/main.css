@@ -8725,7 +8725,7 @@ input {
   text-align: left;
   font-family: "lora";
   font-size: 18px;
-  background-color: rgba(169, 169, 169, 0.9); }
+  background-color: darkgray; }
   @media (max-width: 1170px) {
     .nav--header {
       padding: 0px 0px 5px 0px;
@@ -8746,12 +8746,14 @@ input {
       .nav--header li a:hover, .nav--header li a:focus {
         background-color: transparent;
         color: white; }
-    @media (max-width: 1170px) {
-      .nav--header li ul {
-        list-style: none;
-        padding-left: 0;
-        padding-top: 10px;
-        font-size: 12px; } }
+    .nav--header li ul {
+      font-size: 15px; }
+      @media (max-width: 1170px) {
+        .nav--header li ul {
+          list-style: none;
+          padding-left: 0;
+          padding-top: 10px;
+          font-size: 12px; } }
   @media (max-width: 1170px) {
     .nav--header > li {
       margin-bottom: 20px; } }
@@ -10103,7 +10105,7 @@ input {
   .item-promo__title {
     display: inline-block;
     vertical-align: top;
-    line-height: 20px;
+    line-height: 24px;
     font-size: 19px;
     position: relative;
     padding-bottom: 13px;
@@ -10131,7 +10133,8 @@ input {
     list-style: none;
     margin: 0;
     font-size: 15px;
-    min-height: 91px; }
+    min-height: 91px;
+    line-height: 24px; }
     @media (max-width: 1170px) {
       .item-promo__list {
         font-size: 10px;
