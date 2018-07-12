@@ -478,13 +478,14 @@
   &__description {
     @include make-md-column(19.2);
     @include make-xs-column(24);
-    padding-top: 11px;
+    //padding-top: 11px;
     line-height: 30px;
+    font-family: $lora;
 
     @media(max-width: $screen-md){
       padding-left: 12px !important;
       padding-right: 12px !important;
-      padding-top: 0;
+      //padding-top: 0;
     }
 
     p {
@@ -505,6 +506,7 @@
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  font-family: $lora;
 
   @media(max-width: $screen-md){
     display: inline-block;
