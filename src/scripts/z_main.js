@@ -3,9 +3,34 @@ $(document).ready(function() {
     $('select').selectpicker();
 });
 
-$(document).ready(function() {
-    $('.slider-review').slick({});
-});
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        $(document).ready(function() {
+            $(".product-light").lightSlider({
+                gallery: true,
+                item: 1
+            });
+        });
+    } else {
+        $(document).ready(function() {
+            $(".product-light").lightSlider({
+                gallery: true,
+                item: 1,
+                loop: true,
+                slideMargin: 0,
+                thumbItem: 4,
+                vertical: true,
+                verticalHeight: 485,
+                vThumbWidth: 94,
+                thumbMargin: 36
+            });
+        });
+    }
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x)
+x.addListener(myFunction)
 
 $(document).ready(function() {
     $('.promo-slider').slick({
@@ -32,7 +57,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        // fade: true,
+        fade: true,
         asNavFor: '.product-nav',
         responsive: [
             {
@@ -50,7 +75,7 @@ $(document).ready(function() {
         asNavFor: '.product-for',
         dots: false,
         arrows: false,
-        // centerMode: true,
+        centerMode: true,
         focusOnSelect: true,
         vertical: true,
         verticalSwiping: true,
@@ -70,18 +95,18 @@ $(document).ready(function() {
         ]
     });
 
-    $(".product-nav").mousewheel(function(e) {
-        e.preventDefault();
-        if (e.originalEvent.deltaY > 0) {
-            $(this).slick('slickNext');
-        } else {
-            $(this).slick('slickPrev');
-        }
-    });
+    // $(".product-nav").mousewheel(function(e) {
+    //     e.preventDefault();
+    //     if (e.originalEvent.deltaY > 0) {
+    //         $(this).slick('slickNext');
+    //     } else {
+    //         $(this).slick('slickPrev');
+    //     }
+    // });
 
-    $('.product-nav').mouseover(function(e){
-        $('.product-for').slick("slickNext");
-    });
+    // $('.product-nav').mouseover(function(e){
+    //     $('.product-for').slick("slickNext");
+    // });
 });
 
 $(document).ready(function() {

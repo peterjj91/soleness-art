@@ -38,12 +38,16 @@ button {
       opacity: $opacity-main;
       color: #585858;
       text-decoration: none;
+
+      .btn__promo__icon {
+        fill: #585858;
+      }
     }
 
     &__icon {
       width: 24px;
       height: 21px;
-      fill: rgba(88, 88, 88, 0.5);
+      fill: black;
       vertical-align: top;
       margin-left: 13px;
       overflow: visible !important;

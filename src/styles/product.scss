@@ -1,4 +1,6 @@
 .product {
+  margin-bottom: 52px;
+  font-family: $lora;
 
   @media(max-width: $screen-sm) {
     padding-top: 18px;
@@ -59,14 +61,14 @@
       padding: 0;
       margin: 0;
       list-style: none;
-      font-size: 16px;
+      font-size: 13px;
       color: #585858;
 
       @media(max-width: $screen-sm){
         position: relative;
         bottom: auto;
         left: auto;
-        font-size: 16px;
+        //font-size: 16px;
       }
 
       li {
@@ -81,9 +83,10 @@
     &__text {
       @include make-xs-column(24);
       padding-top: 52px;
+      padding-bottom: 30px;
 
       @media(max-width: $screen-sm){
-        padding-top: 0;
+        padding-top: 30px;
         padding-left: 12px;
         padding-right: 12px;
       }
