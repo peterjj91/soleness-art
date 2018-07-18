@@ -314,187 +314,164 @@
   }
 }
 
-// PRODUCT
-.product-for {
-  &__item {
-    vertical-align: top;
-    position: relative;
-    height: 485px;
-    //overflow: hidden;
+//
+.main-slider {
+  width: 100%;
+  height: 100%;
 
-    @media(max-width: $screen-sm){
-      height: auto;
-    }
-  }
-
-  &__img {
+  &__wrapper {
     position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    width: 100%;
-
-    @media(max-width: $screen-sm){
-      position: relative;
-      top: auto;
-      left: auto;
-      transform: none;
-    }
-  }
-}
-
-.product-nav {
-  .slick-slide {
-    //padding-bottom: 36px;
-    border: none;
-    overflow: hidden;
-    position: relative;
-    outline: none;
-
-    &:before {
-      content: '';
-      position: absolute;
-      opacity: 0.5;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #fff;
-      z-index: 1;
-    }
-
-    &.slick-current {
-      &:before {
-        opacity: 0;
-      }
-    }
-  }
-
-  &__item {
-    position: relative;
-    height: 94px;
-    overflow: hidden;
-    vertical-align: top;
-    margin-bottom: 36px;
-
-  }
-
-  &__img {
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media(max-width: $screen-md){
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 
+.nav-slider {
+  width: 100%;
+  height: 100%;
 
-.product-light__wrapper {
-  .lSSlideOuter {
-    padding-right: 0 !important;
-
-    @media(min-width: $screen-sm){
-      padding-right: 104px !important;
-    }
-    @media(max-width: $screen-sm){
-
-    }
-
-    .lightSlider > * {
-      position: relative !important;
-      overflow: hidden !important;
-      @media(max-width: $screen-sm){
-        height: 100%;
-      }
-    }
+  &__wrapper {
+    width: 100%;
+    height: 100%;
   }
 
-  .lSSlideWrapper {
-    background: black;
-
-    &:before {
-      @media(max-width: $screen-sm){
-        content: '';
-        display: block;
-        margin-top: 100%;
-      }
-    }
-
-    .lslide {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .product-light {
-      @media(max-width: $screen-sm){
-        position: absolute;
-        top: 0px;
-        //left: 100%;
-        height: 100% !important;
-      }
-    }
-
-    img {
-      //@media(min-width: $screen-sm){
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-        width: 100%;
-      //}
-    }
+  .slide-bgimg {
+    //position: relative;
+    //overflow: hidden;
+    //
+    //&:before {
+    //  content: '';
+    //  display: block;
+    //  margin-top: 100%;
+    //}
   }
 
-  .lSPager {
-    @media(min-width: $screen-sm){
-      width: 66px !important;
-    }
-    @media(max-width: $screen-sm){
-      //display: none;
-    }
-
-    li {
-      @media(min-width: $screen-sm){
-        border-radius: 0px !important;
-        position: relative;
-        overflow: hidden;
-      }
-
-      &:before {
-        content: '';
-        position: absolute;
-        @media(min-width: $screen-sm){
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: #fff;
-          opacity: 0.5;
-          z-index: 1;
-          pointer-events: none;
-        }
-      }
-
-      img {
-        @media(min-width: $screen-sm){
-          position: absolute;
-          transform: translate(-50%, -50%);
-          top: 50%;
-          left: 50%;
-          min-width: 100%;
-          height: 100% !important;
-          max-width: none !important;
-        }
-      }
-
-      &.active {
-        border-radius: 0px;
-
-        &:before {
-          z-index: 0;
-        }
-      }
-    }
+  .entity-img {
+    //display: block !important;
+    //position: absolute;
+    //transform: translate(-50%, -50%);
+    //left: 50%;
+    //top: 50%;
+    //height: 100%;
   }
+}
+
+[class^="swiper-button-"] {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.swiper-slide {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.swiper-container {
+  //width: 80%;
+  //height: 100vh;
+  float: left;
+  -webkit-transition: opacity .6s ease, -webkit-transform .3s ease;
+  transition: opacity .6s ease, -webkit-transform .3s ease;
+  transition: opacity .6s ease, transform .3s ease;
+  transition: opacity .6s ease, transform .3s ease, -webkit-transform .3s ease;
+}
+.swiper-container.nav-slider .swiper-slide {
+  cursor: pointer;
+  opacity: .4;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+.swiper-container.nav-slider .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+.swiper-container.nav-slider .swiper-slide .content {
+  width: 100%;
+}
+.swiper-container.nav-slider .swiper-slide .content .title {
+  font-size: 20px;
+}
+.swiper-container:hover .swiper-button-prev,
+.swiper-container:hover .swiper-button-next {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+.swiper-container.loading {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+.swiper-slide .slide-bgimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center !important;
+  background-size: cover !important;
+
+  &:hover, &:focus {
+    opacity: 1;
+  }
+}
+.swiper-slide .entity-img {
+  display: none;
+}
+.swiper-slide .content {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 50%;
+  padding-left: 5%;
+  color: #fff;
+}
+.swiper-slide .content .title {
+  font-size: 2.6em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.swiper-slide .content .caption {
+  display: block;
+  font-size: 13px;
+  line-height: 1.4;
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+  opacity: 0;
+  -webkit-transition: opacity .3s ease, -webkit-transform .7s ease;
+  transition: opacity .3s ease, -webkit-transform .7s ease;
+  transition: opacity .3s ease, transform .7s ease;
+  transition: opacity .3s ease, transform .7s ease, -webkit-transform .7s ease;
+}
+.swiper-slide .content .caption.show {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+[class^="swiper-button-"] {
+  width: 44px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.swiper-button-prev {
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+}
+
+.swiper-button-next {
+  -webkit-transform: translateX(-50px);
+  transform: translateX(-50px);
 }

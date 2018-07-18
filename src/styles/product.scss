@@ -194,28 +194,53 @@
 
   &__slider {
     @extend %row;
+    position: relative;
     @media(max-width: $screen-sm){
       margin-left: 0;
       margin-right: 0;
     }
 
+    //&:before {
+    //  content: '';
+    //  display: block;
+    //  margin-top: 100%;
+    //}
+
     &__main {
       @include make-xs-column(24);
-      @include make-sm-column(19.2);
+      //@include make-sm-column(19.2);
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 30px;
 
+      @media(max-width: $screen-md){
+        padding: 0;
+      }
       @media(max-width: $screen-sm){
         padding: 0;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        margin-top: 100%;
       }
     }
 
     &__nav {
       @include make-xs-column(24);
-      @include make-sm-column(4.9);
-      @include make-sm-column-offset(-0.2);
-      height: 485px;
+      //@include make-sm-column(4.9);
+      //@include make-sm-column-offset(-0.2);
+      //height: 485px;
+      height: 80px;
       overflow: hidden;
+
+      @media(max-width: $screen-md){
+        padding: 0;
+      }
+
       @media(max-width: $screen-sm){
-        display: none;
+        //display: none;
       }
     }
   }
