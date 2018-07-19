@@ -232,17 +232,126 @@
 <div class="content">
     <div class="content__container">
 
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="product.html">Товар</a></li>
-            <li><a href="category.html">Категория</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="news.html">События</a></li>
-            <li><a href="text.html">Текстовая</a></li>
-            <li><a href="about.html">О компании</a></li>
-            <li><a href="order.html">Оформление заказа</a></li>
-            <li><a href="basket.html">Корзина</a></li>
-        </ul>
+        <div class="order">
+
+            <div class="head-h1">Корзина</div>
+
+            <table class="table order__table responsive-table">
+                <thead>
+                <tr>
+                    <td>Фото</td>
+                    <td>Название</td>
+                    <td>Количество</td>
+                    <td>Цена</td>
+                    <td>Стоимость</td>
+                    <td>Удалить</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <img src="img/order-img1.jpg" class="order__table__img" alt="">
+                    </td>
+                    <td>
+                        <div class="head-h4">Кресло Ardingley Armchair</div>
+                    </td>
+                    <td>
+                        <div class="promo-count input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+
+                            <input type="text" name="quant[1]" class="form-control promo-count__number" value="1" min="1" max="10">
+
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-number" data-type="plus" data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        187 200 руб
+                    </td>
+                    <td>
+                        374 400 руб
+                    </td>
+                    <td>
+                        <div class="order__table__close">
+                            <div class="icon icon__close"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/order-img1.jpg" class="order__table__img" alt="">
+                    </td>
+                    <td>
+                        <div class="head-h4">Кресло Ardingley Armchair</div>
+                    </td>
+                    <td>
+                        <div class="promo-count input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+
+                            <input type="text" name="quant[1]" class="form-control promo-count__number" value="1" min="1" max="10">
+
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-number" data-type="plus" data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        187 200 руб
+                    </td>
+                    <td>
+                        374 400 руб
+                    </td>
+                    <td>
+                        <div class="order__table__close">
+                            <div class="icon icon__close"></div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="order__total">
+                <div class="order__total__text">
+                    <button class="btn btn__promo">
+                        Вернуться в корзину
+                    </button>
+                </div>
+
+                <div class="order__total__price">
+                    <div class="head-h5"><strong>Итого 700 000 руб</strong></div>
+                </div>
+            </div>
+
+            <div class="order__coupon">
+                <div class="order__coupon__form">
+                    <input type="text" class="input order__coupon__input" placeholder="Промо 10">
+
+                    <div class="order__coupon__btn">
+                        <button class="btn btn__promo btn__promo--main">Применить карту/купон на скидку</button>
+                    </div>
+                </div>
+
+                <div class="order__coupon__text">
+                    <p>Применен купон на скидку 10%</p>
+                    <div class="head-h4 color--promo">Итоговая сумма к оплате  600 000</div>
+                    <button class="btn btn__promo btn__promo--main">Отправить заказ</button>
+                </div>
+            </div>
+
+        </div>
 
     </div>
 </div>

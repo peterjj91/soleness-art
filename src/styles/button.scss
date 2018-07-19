@@ -56,6 +56,15 @@ button {
         //display: none;
       }
     }
+
+    &--main {
+      background: #8c0303;
+      color: white;
+
+      &:hover, &:focus {
+        color: white;
+      }
+    }
   }
 }
 

@@ -3,124 +3,6 @@ $(document).ready(function() {
     $('select').selectpicker();
 });
 
-function myFunction(x) {
-    if (x.matches) { // If media query matches
-        $(document).ready(function() {
-            $(".product-light").lightSlider({
-                gallery: true,
-                item: 1
-            });
-        });
-    } else {
-        $(document).ready(function() {
-            $(".product-light").lightSlider({
-                gallery: true,
-                item: 1,
-                loop: true,
-                slideMargin: 0,
-                thumbItem: 4,
-                vertical: true,
-                verticalHeight: 485,
-                vThumbWidth: 94,
-                thumbMargin: 36
-            });
-        });
-    }
-}
-
-var x = window.matchMedia("(max-width: 700px)")
-myFunction(x)
-x.addListener(myFunction);
-
-if ($(".main-slider")[0]){
-    // swiper slider
-    let mainSliderSelector = '.main-slider',
-        navSliderSelector = '.nav-slider',
-        interleaveOffset = 0.5;
-
-// Main Slider
-    let mainSliderOptions = {
-        loop: true,
-        speed:1000,
-        loopAdditionalSlides: 10,
-        grabCursor: true,
-        watchSlidesProgress: true,
-        mousewheel: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        on: {
-            init: function(){
-                this.autoplay.stop();
-            },
-            imagesReady: function(){
-                this.el.classList.remove('loading');
-                this.autoplay.start();
-            },
-            progress: function(){
-                let swiper = this;
-                for (let i = 0; i < swiper.slides.length; i++) {
-                    let slideProgress = swiper.slides[i].progress,
-                        innerOffset = swiper.width * interleaveOffset,
-                        innerTranslate = slideProgress * innerOffset;
-                    swiper.slides[i].querySelector(".slide-bgimg").style.transform =
-                        "translate3d(" + innerTranslate + "px, 0, 0)";
-                }
-            },
-            touchStart: function() {
-                let swiper = this;
-                for (let i = 0; i < swiper.slides.length; i++) {
-                    swiper.slides[i].style.transition = "";
-                }
-            },
-            setTransition: function(speed) {
-                let swiper = this;
-                for (let i = 0; i < swiper.slides.length; i++) {
-                    swiper.slides[i].style.transition = speed + "ms";
-                    swiper.slides[i].querySelector(".slide-bgimg").style.transition =
-                        speed + "ms";
-                }
-            }
-        }
-    };
-    let mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
-
-// Navigation Slider
-    let navSliderOptions = {
-        loop: true,
-        loopAdditionalSlides: 10,
-        speed: 1000,
-        spaceBetween: 5,
-        slidesPerView: 4,
-        centeredSlides : true,
-        touchRatio: 0.2,
-        mousewheel: true,
-        paginationClickable: true,
-        slideToClickedSlide: true,
-        // direction: 'vertical',
-        on: {
-            imagesReady: function(){
-                this.el.classList.remove('loading');
-            },
-            click: function(){
-                mainSlider.autoplay.stop();
-            }
-        }
-    };
-    let navSlider = new Swiper(navSliderSelector, navSliderOptions);
-
-    // Matching sliders
-    mainSlider.controller.control = navSlider;
-    navSlider.controller.control = mainSlider;
-
-    $('.nav-slider').on('hover', 'div.swiper-slide', function(){
-        mainSlider.slideTo($(this).index(), 500);
-    });
-    // close swiper slider
-}
-
-
 $(document).ready(function() {
     $('.promo-slider').slick({
         dots: true,
@@ -146,7 +28,10 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        fade: true,
+        // fade: true,
+        accessibility: false,
+        verticalScrolling: true,
+        swipeToSlide: true,
         asNavFor: '.product-nav',
         responsive: [
             {
@@ -163,39 +48,51 @@ $(document).ready(function() {
         slidesToScroll: 1,
         asNavFor: '.product-for',
         dots: false,
-        arrows: false,
-        centerMode: true,
-        focusOnSelect: true,
+        arrows: true,
+        centerMode: false,
+        focusOnSelect: false,
         vertical: true,
         verticalSwiping: true,
+        verticalScrolling: true,
+        swipeToSlide: true,
         responsive: [
             {
-                breakpoint: 1050,
+                breakpoint: 1170,
                 settings: {
-
+                    vertical: false
                 }
             },
             {
                 breakpoint: 700,
                 settings: {
-                    vertical: false,
+
                 }
             }
         ]
     });
 
-    // $(".product-nav").mousewheel(function(e) {
-    //     e.preventDefault();
-    //     if (e.originalEvent.deltaY > 0) {
-    //         $(this).slick('slickNext');
-    //     } else {
-    //         $(this).slick('slickPrev');
-    //     }
-    // });
+    $('.product-nav .slick-slide').on('mouseover', function (event) {
+        $('.product-for').slick('slickGoTo', $(this).data('slickIndex'));
+        $('.product-nav .slick-slide').removeClass('slick-current');
+        $(this).addClass('slick-current');
+    });
 
-    // $('.product-nav').mouseover(function(e){
-    //     $('.product-for').slick("slickNext");
-    // });
+    $(".product-for").mousewheel(function(e) {
+        e.preventDefault();
+        if (e.originalEvent.deltaY < 0) {
+            $(this).slick('slickNext');
+        } else {
+            $(this).slick('slickPrev');
+        }
+    });
+    $(".product-nav").mousewheel(function(e) {
+        e.preventDefault();
+        if (e.originalEvent.deltaY < 0) {
+            $(this).slick('slickNext');
+        } else {
+            $(this).slick('slickPrev');
+        }
+    });
 });
 
 $(document).ready(function() {
@@ -383,6 +280,11 @@ $(document).click(function(e) {
     if (!$(e.target).is('.header__nav')) {
         $('.collapse').collapse('hide');
     }
+});
+
+$(document).on('click','.category__catalog__side__collapse .btn',function(){
+    $(".category__catalog__side__content").toggleClass('active');
+
 });
 
 new WOW().init();

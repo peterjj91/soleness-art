@@ -19,6 +19,11 @@
     //padding-left: 12px;
     //padding-right: 12px;
   }
+  @media(max-width: $screen-sm){
+    width: 100%;
+    padding-top: 0;
+    text-align: center;
+  }
 
   .navbar-collapse {
     padding: 0;
@@ -27,6 +32,21 @@
     width: 100%;
     //height: 100%;
     z-index: 1;
+
+    @media(max-width: $screen-sm){
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+
+    &:before {
+      @media(max-width: $screen-sm){
+        content: '';
+        display: block;
+        margin-top: 100%;
+      }
+    }
   }
 
   .header__container, .container {

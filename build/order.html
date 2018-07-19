@@ -43,13 +43,15 @@
 
                 <div class="header__burger__wrapper">
                     <div class="header__burger">
-                        <span class="header__burger__title" type="button" data-toggle="collapse" data-target=".menu-main">Каталог</span>
+                        <span class="header__burger__title" type="button" data-toggle="collapse" data-target=".menu-main">
+                            Каталог
 
-                        <span class="mobile-menu" type="button" data-toggle="collapse" data-target=".menu-main">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <span class="mobile-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
                         </span>
                     </div>
 
@@ -329,18 +331,18 @@
                 </div>
 
                 <div class="order__total__price">
-                    <div class="head-h4"><strong>Итого 700 000 руб</strong></div>
+                    <div class="head-h5"><strong>Итого 700 000 руб</strong></div>
                 </div>
             </div>
 
-            <div class="form-order">
+            <div class="form-order form-order--order">
                 <div class="form-order__info">
                     <div class="input-group">
                         <span class="input-group-addon">
                             Фио
                         </span>
 
-                        <input type="text" class="form-control" placeholder="Search for...">
+                        <input type="text" class="form-control" placeholder="">
                     </div>
 
                     <div class="input-group">
@@ -348,7 +350,7 @@
                             E-mail
                         </span>
 
-                        <input type="text" class="form-control" placeholder="Search for...">
+                        <input type="text" class="form-control" placeholder="">
                     </div>
 
                     <div class="input-group">
@@ -356,7 +358,7 @@
                             Телефон
                         </span>
 
-                        <input type="text" class="form-control" placeholder="Search for...">
+                        <input type="text" class="form-control" placeholder="">
                     </div>
 
                     <div class="input-group">
@@ -364,7 +366,7 @@
                             Город
                         </span>
 
-                        <input type="text" class="form-control" placeholder="Search for...">
+                        <input type="text" class="form-control" placeholder="">
                     </div>
 
                     <div class="input-group">
@@ -372,7 +374,7 @@
                             Адрес
                         </span>
 
-                        <input type="text" class="form-control" placeholder="Search for...">
+                        <input type="text" class="form-control" placeholder="">
                     </div>
 
                     <div class="input-group">
@@ -380,13 +382,115 @@
                             Примечание
                         </span>
 
-                        <!--<input type="text" class="form-control" placeholder="Search for...">-->
                         <textarea name="" id="" cols="30" class="form-control" rows="10"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-group-addon">
+
+                        </div>
+
+                        <label class="control control--checkbox control--mark control--big">
+                            <input type="checkbox" name="checkbox" checked="checked"/>
+                            <div class="control__indicator"></div>
+
+                            Согласен с <a href="#">условиями</a> обработки персональных данных *
+                        </label>
                     </div>
                 </div>
 
                 <div class="form-order__delivery">
+                    <div class="input-group">
+                        <span class="input-group-addon input-group-addon--title">
+                            Доставка
+                        </span>
 
+                        <span class="input-group-addon input-group-addon--container">
+                            <label class="control control--radio">
+                                <input type="radio" name="radio1" checked="checked"/>
+                                <div class="control__indicator"></div>
+
+                                Доставка по Москве курьером
+                            </label>
+
+                            <label class="control control--radio">
+                                <input type="radio" name="radio1"/>
+                                <div class="control__indicator"></div>
+
+                                Доставка по РФ
+                            </label>
+
+                            <label class="control control--radio">
+                                <input type="radio" name="radio1"/>
+                                <div class="control__indicator"></div>
+
+                                Самовывоз
+                            </label>
+                        </span>
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon input-group-addon--title">
+                            Оплата
+                        </span>
+
+                        <span class="input-group-addon input-group-addon--container">
+                            <label class="control control--radio">
+                                <input type="radio" name="radio" checked="checked"/>
+                                <div class="control__indicator"></div>
+
+                                Наличные при получении
+                            </label>
+
+                            <label class="control control--radio">
+                                <input type="radio" name="radio"/>
+                                <div class="control__indicator"></div>
+
+                                Банковский перевод
+                            </label>
+
+                            <label class="control control--radio">
+                                <input type="radio" name="radio"/>
+                                <div class="control__indicator"></div>
+
+                                Картой при получении
+                            </label>
+
+                            <label class="control control--radio">
+                                <input type="radio" name="radio"/>
+                                <div class="control__indicator"></div>
+
+                                Картой онлайн
+                            </label>
+
+                            <label class="control control--radio">
+                                <input type="radio" name="radio"/>
+                                <div class="control__indicator"></div>
+
+                                ApplePay
+                            </label>
+
+                            <label class="control control--radio">
+                                <input type="radio" name="radio"/>
+                                <div class="control__indicator"></div>
+
+                                GooglePay
+                            </label>
+
+                            <br>
+
+                            <label class="control control--checkbox control--mark control--big">
+                                <input type="checkbox" name="checkbox"/>
+                                <div class="control__indicator"></div>
+
+                                Получить только электронный чек
+                            </label>
+
+                            <br>
+
+                            <button class="btn btn__promo btn__promo--main">Отправить заказ</button>
+                        </span>
+                    </div>
                 </div>
             </div>
 

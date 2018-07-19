@@ -7,8 +7,11 @@
     background-color: #fff;
     height: 83px;
     padding-top: 22px;
-    z-index: 2;
+    z-index: 3;
     top: 0;
+  }
+  @media(max-width: $screen-sm){
+
   }
 
   &__container {
@@ -140,12 +143,26 @@
         left: 50%;
         margin-top: 0px;
       }
+      @media(max-width: $screen-sm){
+        position: initial;
+        transform: none;
+        top: auto;
+        left: auto;
+        margin-right: -42px;
+      }
 
       &:hover, &:focus {
         //opacity: $opacity-main;
       }
+    }
 
-      .promo-mobile {
+    .mobile-menu {
+      margin-left: 16px;
+
+      @media(max-width: $screen-md){
+        margin-left: 8px;
+      }
+      @media(max-width: $screen-sm){
 
       }
     }
@@ -155,12 +172,12 @@
       font-size: 18px;
       display: inline-block;
       vertical-align: middle;
-      margin-right: 21px;
+      //margin-right: 21px;
       cursor: pointer;
 
       @media(max-width: $screen-md){
         font-size: 14px;
-        margin-right: 13px;
+        //margin-right: 13px;
       }
     }
 
@@ -282,7 +299,10 @@
       //padding: 15px 0px;
       margin-left: 0;
     }
-
+    @media(max-width: $screen-sm){
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
     @media(max-width: $screen-xs){
       //width: 100%;
       //margin: 0;
@@ -297,6 +317,14 @@
         //height: auto;
         //min-height: 177px;
         //padding: 0px 12px;
+      }
+      @media(max-width: $screen-sm){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
       }
 
       &:before {

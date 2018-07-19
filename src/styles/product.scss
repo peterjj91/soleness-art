@@ -22,6 +22,7 @@
     @media(max-width: $screen-sm){
       padding-left: 12px;
       padding-right: 12px;
+      margin-bottom: 30px;
     }
 
     &__row {
@@ -32,9 +33,13 @@
       @include make-xs-column(24);
       @include make-sm-column(14.2);
 
+      @media(max-width: $screen-md){
+        padding-left: 12px;
+        padding-right: 12px;
+      }
       @media(max-width: $screen-sm){
         padding: 0;
-        margin-bottom: 38px;
+        margin-bottom: 20px;
       }
     }
 
@@ -50,7 +55,7 @@
         padding-left: 12px;
         padding-right: 12px;
         padding-bottom: 35px;
-        margin-bottom: 35px;
+        margin-bottom: 0px;
       }
     }
 
@@ -62,7 +67,7 @@
       margin: 0;
       list-style: none;
       font-size: 13px;
-      color: #585858;
+      color: black;
 
       @media(max-width: $screen-sm){
         position: relative;
@@ -89,6 +94,7 @@
         padding-top: 30px;
         padding-left: 12px;
         padding-right: 12px;
+        padding-bottom: 0;
       }
 
       &__title {
@@ -102,7 +108,7 @@
 
       p {
         font-size: 16px;
-        color: #585858;
+        color: black;
 
         @media(max-width: $screen-sm){
           font-size: 18px;
@@ -184,7 +190,7 @@
 
     p {
       color: #585858;
-      font-size: 18px;
+      font-size: 17px;
 
       @media(max-width: $screen-sm){
         font-size: 11px;
@@ -192,55 +198,72 @@
     }
   }
 
+  &__sheep {
+    white-space: nowrap;
+  }
+
   &__slider {
     @extend %row;
-    position: relative;
     @media(max-width: $screen-sm){
       margin-left: 0;
       margin-right: 0;
     }
 
-    //&:before {
-    //  content: '';
-    //  display: block;
-    //  margin-top: 100%;
-    //}
-
     &__main {
       @include make-xs-column(24);
-      //@include make-sm-column(19.2);
+      @include make-md-column(19.2);
       position: relative;
       overflow: hidden;
-      margin-bottom: 30px;
 
       @media(max-width: $screen-md){
         padding: 0;
+        margin-bottom: 20px;
       }
       @media(max-width: $screen-sm){
-        padding: 0;
+        margin-bottom: 0;
       }
 
       &:before {
         content: '';
         display: block;
         margin-top: 100%;
+
+        @media(max-width: $screen-sm){
+          display: none;
+        }
+      }
+
+      .product-for {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0px 20px;
+
+        @media(max-width: $screen-md){
+          padding: 0;
+        }
+        @media(max-width: $screen-sm){
+          position: relative;
+          height: auto;
+          width: auto;
+        }
       }
     }
 
     &__nav {
       @include make-xs-column(24);
-      //@include make-sm-column(4.9);
-      //@include make-sm-column-offset(-0.2);
+      @include make-md-column(4.9);
+      @include make-md-column-offset(-0.2);
       //height: 485px;
-      height: 80px;
-      overflow: hidden;
-
+      //overflow: hidden;
       @media(max-width: $screen-md){
         padding: 0;
-      }
-
-      @media(max-width: $screen-sm){
         //display: none;
+      }
+      @media(max-width: $screen-sm){
+        display: none;
       }
     }
   }

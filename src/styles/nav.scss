@@ -17,6 +17,9 @@
       margin-top: 0px;
       text-align: center;
     }
+    @media(max-width: $screen-sm){
+      width: 45%;
+    }
 
     li {
       margin-bottom: 10px;
@@ -51,6 +54,9 @@
           padding-top: 10px;
           font-size: 12px;
         }
+        @media(max-width: $screen-sm){
+          padding-top: 0;
+        }
       }
     }
 
@@ -59,9 +65,16 @@
         margin-bottom: 20px;
       }
 
+      @media(max-width: $screen-sm){
+        margin-bottom: 15px;
+      }
+
       & > a {
         @media(max-width: $screen-md){
           font-size: 18px;
+        }
+        @media(max-width: $screen-sm){
+          font-size: 16px;
         }
       }
     }

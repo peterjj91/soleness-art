@@ -6,6 +6,10 @@
     font-size: 18px;
     font-family: $scada;
 
+    @media(max-width: $screen-sm){
+      margin-top: 20px;
+    }
+
     img {
       @media(max-width: $screen-md){
         margin: 0 auto;
@@ -25,7 +29,7 @@
 
       tr {
         td {
-          padding: 13px 0px;
+          padding: 13px 20px;
           text-align: center;
 
           &:first-child {
@@ -34,11 +38,10 @@
           }
 
           &:nth-child(2){
-            padding-left: 50px;
             text-align: left;
           }
           &:last-child {
-            padding-right: 0px;
+            text-align: right;
           }
         }
       }
@@ -50,21 +53,21 @@
           vertical-align: middle;
           padding-top: 50px;
           padding-bottom: 50px;
-          padding-left: 0;
-          padding-right: 0;
+          padding-left: 20px;
+          padding-right: 20px;
           text-align: center;
 
           &:first-child {
+            padding-left: 0;
             text-align: left;
           }
 
           &:nth-child(2){
-            padding-left: 50px;
             text-align: left;
           }
 
           &:last-child {
-            padding-right: 0px;
+            text-align: right;
           }
         }
 
@@ -92,23 +95,206 @@
 
     &__text {
       float: left;
+
+      @media(max-width: $screen-sm){
+        width: 100%;
+      }
+
+      .btn {
+        padding: 7px 18px 8px 22px;
+        font-size: 14px;
+      }
     }
 
     &__price {
       float: right;
+
+      @media(max-width: $screen-sm){
+        width: 100%;
+        padding-top: 20px;
+      }
+    }
+  }
+
+  &__coupon {
+    margin-top: 50px;
+
+    &__form {
+      margin-bottom: 50px;
+    }
+
+    &__input {
+      width: 40%;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 30px;
+      height: 42px;
+      border: 1px solid rgba(88, 88, 88, 0.5);
+      padding: 5px 20px;
+
+      @media(max-width: $screen-sm){
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+
+    &__btn {
+      display: inline-block;
+      vertical-align: top;
+
+      @media(max-width: $screen-sm){
+
+      }
+    }
+
+    &__text {
+      p {
+        margin-bottom: 0;
+        font-size: 17px;
+      }
     }
   }
 }
 
 .form-order {
-
+  @include make-row;
+  @media(max-width: $screen-md){
+    margin-left: -12px;
+    margin-right: -12px;
+  }
 
   &__info {
+    @include make-xs-column(24);
+    @include make-md-column(13);
+    @media(max-width: $screen-sm){
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+    }
 
+    .input-group {
+      width: 100%;
+      margin-bottom: 41px;
+
+      @media(max-width: $screen-sm){
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    .input-group-addon {
+      width: 180px;
+      padding: 0px 38px 0px 0px;
+      border-radius: 0px;
+      background: transparent;
+      border: none;
+      text-align: right;
+      font-size: 20px;
+
+      @media(max-width: $screen-sm){
+        width: 100%;
+        font-size: 16px;
+        padding-right: 0;
+        padding-bottom: 10px;
+      }
+    }
+
+    .form-control {
+      height: 43px;
+      border-radius: 0px;
+    }
   }
 
   &__delivery {
+    @include make-xs-column(24);
+    @include make-md-column(10);
+    float: right !important;
+    text-align: right;
+    @media(max-width: $screen-md){
+      text-align: left;
+    }
+    @media(max-width: $screen-sm){
+      padding-top: 20px;
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+    }
 
+    .input-group {
+      width: 100%;
+      margin-bottom: 41px;
+      display: inline-block;
+      vertical-align: top;
+
+      @media(max-width: $screen-sm){
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 20px;
+      }
+
+      .control {
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+    }
+
+    .input-group-addon {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0px 0px 0px 0px;
+      border-radius: 0px;
+      background: transparent;
+      border: none;
+      text-align: right;
+      font-size: 20px;
+
+      @media(max-width: $screen-sm){
+        text-align: left;
+        font-size: 16px;
+      }
+
+      &--title {
+        padding-right: 70px;
+        width: auto;
+        vertical-align: top;
+
+        @media(max-width: $screen-md){
+          width: 180px;
+        }
+        @media(max-width: $screen-sm){
+          display: inline-block;
+          padding-right: 0;
+          width: 100%;
+          padding-bottom: 20px;
+        }
+      }
+
+      &--container {
+        //width: 58%;
+        width: 259px;
+        text-align: left;
+        vertical-align: top;
+
+        @media(max-width: $screen-md){
+          width: auto;
+        }
+        @media(max-width: $screen-sm){
+          width: 100%;
+        }
+      }
+    }
+
+    .form-control {
+      height: 43px;
+      border-radius: 0px;
+    }
+  }
+
+  &--order {
+    margin-top: 85px;
+
+    @media(max-width: $screen-sm){
+      margin-top: 30px;
+    }
   }
 }
 

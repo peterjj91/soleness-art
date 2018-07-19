@@ -29,6 +29,11 @@
             padding-top: 20px;
           }
         }
+
+        &.active {
+          height: auto !important;
+          display: block !important;
+        }
       }
 
       &__collapse {

@@ -118,3 +118,27 @@
     //width: auto;
   }
 }
+
+.fancybox-navigation .fancybox-button--arrow_left {
+  @media(max-width: $screen-md) {
+    left: 15%;
+  }
+  @media(max-width: $screen-sm) {
+    left: 10%;
+  }
+  @media(max-width: $screen-xs) {
+    left: 5%;
+  }
+}
+
+.fancybox-navigation .fancybox-button--arrow_right {
+  @media(max-width: $screen-md) {
+    right: 15%;
+  }
+  @media(max-width: $screen-sm) {
+    right: 10%;
+  }
+  @media(max-width: $screen-xs) {
+    right: 5%;
+  }
+}
