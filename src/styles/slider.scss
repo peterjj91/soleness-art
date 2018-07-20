@@ -374,8 +374,14 @@
     margin-right: 0;
   }
 
+  .slick-list {
+    margin: -18px 0px;
+  }
+
   .slick-slide {
-    margin-bottom: 37px;
+    //margin-bottom: 37px;
+    margin-top: 18px;
+    margin-bottom: 18px;
     border: none;
     overflow: hidden;
     position: relative;
@@ -413,6 +419,12 @@
     &.slick-current {
       &:before {
         opacity: 0;
+      }
+    }
+
+    &.slick-active {
+      &:nth-child(4){
+        //margin-bottom: 0;
       }
     }
   }
@@ -464,18 +476,18 @@
 
     &.slick-prev {
       transform: rotate(90deg);
-      top: -40px;
+      top: -20px;
 
       @media(max-width: $screen-md){
         transform: none;
         top: 50%;
-        margin-left: -20px;
+        margin-left: -23px;
       }
     }
 
     &.slick-next {
       transform: rotate(90deg);
-      bottom: -5px;
+      bottom: -20px;
 
       @media(max-width: $screen-md) {
         transform: none;

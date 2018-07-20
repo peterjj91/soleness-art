@@ -14,8 +14,12 @@
   &__main {
     @include make-xs-column(24);
     @include make-md-column(18);
+    display: table-cell;
+    vertical-align: top;
+    float: none !important;
 
     @media(max-width: 1200px){
+      display: inline-block;
       width: 100%;
       margin-bottom: 40px;
     }
@@ -23,6 +27,16 @@
       padding-left: 12px;
       padding-right: 12px;
       margin-bottom: 30px;
+    }
+
+    &__wrapper {
+      display: table;
+
+      @media(max-width: 1200px){
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+      }
     }
 
     &__row {
@@ -47,7 +61,7 @@
       @include make-xs-column(24);
       @include make-sm-column(9.7);
       @include make-md-column-offset(0.1);
-      min-height: 485px;
+      //min-height: 485px;
 
       @media(max-width: $screen-sm){
         border-bottom: 1px solid rgba(88, 88, 88, 0.5);
@@ -60,9 +74,9 @@
     }
 
     &__description {
-      position: absolute;
-      bottom: -1px;
-      left: 20px;
+      //position: absolute;
+      //bottom: -1px;
+      //left: 20px;
       padding: 0;
       margin: 0;
       list-style: none;
@@ -146,11 +160,15 @@
     @include make-md-column(6);
     @include make-lg-column(5.3);
     @include make-lg-column-offset(0.7);
+    display: table-cell;
+    vertical-align: top;
+    float: none !important;
     border-left: 1px solid rgba(88, 88, 88, 0.5);
-    min-height: 485px;
+    //min-height: 485px;
     text-align: right;
 
     @media(max-width: 1200px){
+      display: inline-block;
       width: 100%;
       border-left: none;
       text-align: left;
@@ -193,7 +211,7 @@
       font-size: 17px;
 
       @media(max-width: $screen-sm){
-        font-size: 11px;
+        font-size: 13px;
       }
     }
   }

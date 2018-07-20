@@ -32136,6 +32136,7 @@ $(document).ready(function() {
         // fade: true,
         accessibility: false,
         verticalScrolling: true,
+        infinite: false,
         swipeToSlide: true,
         asNavFor: '.product-nav',
         responsive: [
@@ -32152,14 +32153,13 @@ $(document).ready(function() {
         slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.product-for',
+        accessibility: false,
         dots: false,
         arrows: true,
         centerMode: false,
         focusOnSelect: false,
+        infinite: false,
         vertical: true,
-        verticalSwiping: true,
-        verticalScrolling: true,
-        swipeToSlide: true,
         responsive: [
             {
                 breakpoint: 1170,
@@ -32176,11 +32176,15 @@ $(document).ready(function() {
         ]
     });
 
-    $('.product-nav .slick-slide').on('mouseover', function (event) {
+    $('.product-nav .slick-slide').hover(function (event) {
         $('.product-for').slick('slickGoTo', $(this).data('slickIndex'));
         $('.product-nav .slick-slide').removeClass('slick-current');
         $(this).addClass('slick-current');
     });
+
+    // $('.slider-nav .slick-slide').on('click', function (event) {
+    //     $('.slider-for').slick('slickGoTo', $(this).data('slickIndex'));
+    // });
 
     $(".product-for").mousewheel(function(e) {
         e.preventDefault();
@@ -32355,7 +32359,6 @@ $(document).ready(function(){
         $(this).data('oldValue', $(this).val());
     });
     $('.promo-count__number').change(function() {
-
         minValue =  parseInt($(this).attr('min'));
         maxValue =  parseInt($(this).attr('max'));
         valueCurrent = parseInt($(this).val());
@@ -32373,7 +32376,6 @@ $(document).ready(function(){
             alert('Sorry, the maximum value was reached');
             $(this).val($(this).data('oldValue'));
         }
-
     });
 });
 

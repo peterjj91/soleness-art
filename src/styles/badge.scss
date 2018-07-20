@@ -23,15 +23,15 @@
     background-color: red;
     border-radius: 50%;
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
 
     @media(max-width: $screen-md){
-      top: 4px;
-      right: 0px;
-      font-size: 5px;
-      line-height: 8px;
-      width: 7px;
-      height: 7px;
+      top: 0px;
+      right: -5px;
+      font-size: 13px;
+      line-height: 15px;
+      width: 15px;
+      height: 15px;
     }
   }
 
