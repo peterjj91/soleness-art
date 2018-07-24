@@ -264,9 +264,11 @@
   &__basket {
     display: inline-block;
     vertical-align: middle;
+    margin-top: 10px;
     margin-left: 52px;
 
     @media(max-width: $screen-md){
+      margin-top: 10px;
       margin-left: 0;
     }
   }

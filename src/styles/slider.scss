@@ -276,7 +276,7 @@
 }
 
 .slider-item {
-  height: 263px;
+
   //overflow: hidden;
   margin-left: -20px;
   margin-right: -20px;
@@ -285,6 +285,9 @@
     height: auto;
     margin-left: -12px;
     margin-right: -12px;
+  }
+  @media(max-width: $screen-sm){
+    //height: 263px;
   }
 
   .slick-list {

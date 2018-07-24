@@ -286,12 +286,15 @@
   &__block {
     @include make-md-column(6);
     @include make-xs-column(12);
-    height: 263px;
 
     @media(max-width: $screen-md){
       padding-left: 6px !important;
       padding-right: 6px !important;
       margin-bottom: 12px;
+      //height: 263px;
+    }
+    @media(max-width: $screen-sm){
+
       height: auto;
     }
 
