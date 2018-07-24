@@ -8450,12 +8450,16 @@ button {
       margin-left: 13px;
       overflow: visible !important; }
     .btn__promo--main {
-      background: rgba(140, 3, 3, 0.7);
+      background: #8c0303;
       color: white; }
       .btn__promo--main:hover, .btn__promo--main:focus {
         opacity: 1;
         color: white;
         background: #8c0303; }
+    .btn__promo--bas:hover, .btn__promo--bas:focus {
+      opacity: 1;
+      background: rgba(140, 3, 3, 0.7);
+      color: white; }
 
 .bootstrap-select {
   border-radius: 100px;
@@ -8944,7 +8948,7 @@ input {
     position: absolute;
     left: 350px;
     margin-top: 4px;
-    z-index: 1; }
+    z-index: 3; }
     @media (max-width: 1170px) {
       .header__burger__wrapper {
         transform: translate(-50%, 0%);
